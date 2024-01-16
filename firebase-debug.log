@@ -1,0 +1,28 @@
+[debug] [2024-01-16T14:15:54.604Z] ----------------------------------------------------------------------
+[debug] [2024-01-16T14:15:54.605Z] Command:       /usr/local/bin/firebase /Users/malekalzein/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase login
+[debug] [2024-01-16T14:15:54.606Z] CLI Version:   12.2.1
+[debug] [2024-01-16T14:15:54.606Z] Platform:      darwin
+[debug] [2024-01-16T14:15:54.607Z] Node Version:  v16.16.0
+[debug] [2024-01-16T14:15:54.608Z] Time:          Tue Jan 16 2024 16:15:54 GMT+0200 (Eastern European Standard Time)
+[debug] [2024-01-16T14:15:54.608Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=444313640&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-01-16T14:17:19.328Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2024-01-16T14:17:19.333Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2024-01-16T14:17:30.765Z] <<< [apiv2][status] POST https://accounts.google.com/o/oauth2/token 200
+[debug] [2024-01-16T14:17:30.769Z] <<< [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[info] 
+[info] ✔  Success! Logged in as malek.alzeein1@gmail.com 
+[debug] [2024-01-16T14:17:40.850Z] Error: Timed out.
+    at Timeout._onTimeout (/Users/malekalzein/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/utils.js:253:49)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+[error] 
+[error] Error: An unexpected error has occurred.
