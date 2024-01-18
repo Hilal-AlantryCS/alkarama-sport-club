@@ -31,7 +31,7 @@ class LoginController extends GetxController {
     super.onInit();
   }
 
-  void login() {
+  void loginV2() {
     //
   }
 }
