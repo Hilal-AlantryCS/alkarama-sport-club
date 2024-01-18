@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:task_P2/core/data/repository/auth_repository.dart';
-import 'package:task_P2/core/data/repository/products-repository.dart';
+
 import 'package:task_P2/core/services/location_service.dart';
 import 'package:task_P2/firebase_options.dart';
 import 'app/my_app.dart';
@@ -30,14 +30,12 @@ Future main() async {
   Get.put(ConnectivitySerivce());
   Get.put(LocationService());
   Get.put(Connectivity());
-  Get.lazyPut(
-    () => ProductRepository(),
-  );
+
   Get.lazyPut(
     () => AuthRepository(),
   );
 
-   try {
+  try {
     await Firebase.initializeApp(
       options: DefaultFirebaseOptions.currentPlatform,
     );

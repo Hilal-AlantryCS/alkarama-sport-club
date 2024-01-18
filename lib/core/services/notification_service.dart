@@ -5,9 +5,9 @@ import 'package:get/get.dart';
 
 import 'package:get/utils.dart';
 import 'package:task_P2/core/data/models/notification_model.dart';
-import 'package:task_P2/core/data/repository/user_repository.dart';
+
 import 'package:task_P2/ui/shared/utlis.dart';
-import 'package:task_P2/ui/views/main_view/prodcuts_view/products_view.dart';
+
 
 enum AppState { TERMINATED, BACKGROUND, FOREGROUND }
 
@@ -77,7 +77,7 @@ class NotificationService {
       //! -- show notification
     } else {
       if (model.notifctionType == 'order') {
-        Get.to(PorductsView());
+
       }
     }
   }
