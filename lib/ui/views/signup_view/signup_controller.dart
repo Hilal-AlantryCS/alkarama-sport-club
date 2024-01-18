@@ -32,8 +32,6 @@ class SignupController extends GetxController {
           Get.off(LoginView());
         } else {
           isLoading.value = false;
-
-          BotToast.showText(text: tr('key_invalid_username_or_password'));
         }
       });
     }
