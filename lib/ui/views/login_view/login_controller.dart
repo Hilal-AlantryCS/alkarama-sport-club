@@ -31,9 +31,7 @@ class LoginController extends GetxController {
     super.onInit();
   }
 
-  void signUp() {
-    Get.to(SignupView());
-  }
+
 
   void checkUser() {}
 }
