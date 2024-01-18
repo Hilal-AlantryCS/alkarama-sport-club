@@ -31,12 +31,7 @@ class LoginController extends GetxController {
     super.onInit();
   }
 
-
-
-  void checkUser() {
-
+  void login() {
     //
   }
-
-
 }
