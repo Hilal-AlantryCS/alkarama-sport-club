@@ -33,5 +33,10 @@ class LoginController extends GetxController {
 
 
 
-  void checkUser() {}
+  void checkUser() {
+
+    //
+  }
+
+
 }
