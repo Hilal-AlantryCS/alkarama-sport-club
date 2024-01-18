@@ -4,8 +4,8 @@ import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:task_P2/core/enums/connectivity_status.dart';
 import 'package:task_P2/ui/shared/utlis.dart';
-import 'package:task_P2/ui/views/landing_view/landing_view.dart';
-import 'package:task_P2/ui/views/map_view/map_view.dart';
+
+
 import '../core/translation/app_translation.dart';
 import '../ui/views/splash_view/spalsh_view.dart';
 import 'my_app_controller.dart';
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
             colorScheme: ColorScheme.fromSeed(
                 seedColor: Color.fromRGBO(1, 171, 237, 100)),
           ),
-          home: LandingView()),
+          home: SplashView()),
     );
   }
 }

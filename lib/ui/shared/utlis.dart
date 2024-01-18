@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:get/get.dart';
 import 'package:task_P2/core/data/repository/auth_repository.dart';
-import 'package:task_P2/core/data/repository/products-repository.dart';
+
 import 'package:task_P2/core/services/location_service.dart';
 import '../../core/data/repository/shared_prefrence_repository.dart';
 import '../../core/services/connectivity_service.dart';
@@ -73,6 +73,6 @@ SharedPrefrenceRepository get storage => Get.find<SharedPrefrenceRepository>();
 ConnectivitySerivce get connectivitySerivce => Get.find<ConnectivitySerivce>();
 LocationService get locationService => Get.find<LocationService>();
 Connectivity get connectivity => Get.find<Connectivity>();
-ProductRepository get productRepository => Get.find<ProductRepository>();
+
 AuthRepository get authRepository => Get.find<AuthRepository>();
 bool isOnline = true;
