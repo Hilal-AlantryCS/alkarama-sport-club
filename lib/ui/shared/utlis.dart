@@ -13,12 +13,12 @@ import 'colors.dart';
 void customLoader() => BotToast.showCustomLoading(toastBuilder: (context) {
       return Container(
         decoration: BoxDecoration(
-            color: Color.fromARGB(255, 247, 103, 103).withOpacity(0.5),
+            color: AppColors.persimmonColor.withOpacity(0.5),
             borderRadius: BorderRadius.circular(10)),
         width: screenWidth(4),
         height: screenWidth(4),
         child: SpinKitCircle(
-          color: AppColors.color8,
+          color: AppColors.blackColor,
           size: screenWidth(8),
         ),
       );
