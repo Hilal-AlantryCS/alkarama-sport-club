@@ -17,8 +17,8 @@ class CustomText extends StatelessWidget {
     super.key,
     required this.text,
     this.styleType,
-    this.textColor = AppColors.color3,
-    this.fontWeight = FontWeight.normal,
+    this.textColor ,
+    this.fontWeight ,
     this.fontSize,
     this.alignText,
   });
@@ -36,42 +36,43 @@ class CustomText extends StatelessWidget {
     TextStyle result = TextStyle();
 
     switch (styleType) {
-      case TextStyleType.PX12:
+      case TextStyleType.TITLE:
         result = TextStyle(
-            fontSize: screenWidth(31),
-            fontWeight: fontWeight,
-            color: textColor);
+            fontSize: screenWidth(26.5),
+            fontWeight: fontWeight??FontWeight.bold ,
+            color: textColor ?? AppColors.color3 );
         break;
-      case TextStyleType.PX14:
+      case TextStyleType.SUBTITLE:
         result = TextStyle(
-            fontSize: screenWidth(26.8),
-            fontWeight: fontWeight,
-            color: textColor);
-        break;
-      case TextStyleType.PX16:
-        result = TextStyle(
-            fontSize: screenWidth(23.5),
-            fontWeight: fontWeight,
-            color: textColor);
-        break;
-      case TextStyleType.PX20:
-        result = TextStyle(
-            fontSize: screenWidth(18.8),
+            fontSize: screenWidth(23.2),
             fontWeight: fontWeight ?? FontWeight.bold,
-            color: textColor);
+            color: textColor ?? AppColors.color9 );
         break;
-      case TextStyleType.PX24:
+      case TextStyleType.BODY:
         result = TextStyle(
-            fontSize: screenWidth(15.6),
-            fontWeight: fontWeight ?? FontWeight.bold,
-            color: textColor);
+            fontSize: screenWidth(31.2),
+            fontWeight: fontWeight ?? FontWeight.normal,
+            color: textColor?? AppColors.color9);
         break;
-      case TextStyleType.PX34:
+      case TextStyleType.SMALL:
         result = TextStyle(
-            fontSize: screenWidth(11),
-            fontWeight: fontWeight ?? FontWeight.bold,
-            color: textColor);
+            fontSize: screenWidth(33),
+            fontWeight: fontWeight ?? FontWeight.normal,
+            color: textColor ?? AppColors.color9);
+        break;      
+        case TextStyleType.NAME:
+        result = TextStyle(
+            fontSize: screenWidth(15),
+            fontWeight: fontWeight ?? FontWeight.normal,
+            color: textColor ?? AppColors.color3);
         break;
+        case TextStyleType.DATE:
+        result = TextStyle(
+            fontSize: screenWidth(26),
+            fontWeight: fontWeight ?? FontWeight.normal,
+            color: textColor ?? AppColors.color9);
+        break;
+        
       case TextStyleType.CUSTOM:
         result = TextStyle(
           fontSize: fontSize,
@@ -82,9 +83,9 @@ class CustomText extends StatelessWidget {
 
       default:
         result = TextStyle(
-            fontSize: screenWidth(26.8),
-            fontWeight: fontWeight,
-            color: textColor);
+            fontSize: screenWidth(31.2),
+            fontWeight: fontWeight ??FontWeight.normal ,
+            color: textColor?? AppColors.color9);
         break;
     }
 
