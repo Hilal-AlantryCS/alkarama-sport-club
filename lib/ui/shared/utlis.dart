@@ -3,9 +3,9 @@ import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:get/get.dart';
-import 'package:task_P2/core/data/repository/auth_repository.dart';
+import 'package:alkarama_sport_club/core/data/repository/auth_repository.dart';
 
-import 'package:task_P2/core/services/location_service.dart';
+import 'package:alkarama_sport_club/core/services/location_service.dart';
 import '../../core/data/repository/shared_prefrence_repository.dart';
 import '../../core/services/connectivity_service.dart';
 import 'colors.dart';

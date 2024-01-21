@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:task_P2/ui/shared/colors.dart';
-import 'package:task_P2/ui/shared/utlis.dart';
+import 'package:alkarama_sport_club/ui/shared/colors.dart';
+import 'package:alkarama_sport_club/ui/shared/utlis.dart';
 
 class CustomPostView extends StatelessWidget {
   final VoidCallback? onPressed;

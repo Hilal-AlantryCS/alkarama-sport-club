@@ -1,12 +1,11 @@
+import 'package:alkarama_sport_club/core/data/repository/auth_repository.dart';
+import 'package:alkarama_sport_club/core/services/location_service.dart';
+import 'package:alkarama_sport_club/firebase_options.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:task_P2/core/data/repository/auth_repository.dart';
-
-import 'package:task_P2/core/services/location_service.dart';
-import 'package:task_P2/firebase_options.dart';
 import 'app/my_app.dart';
 import 'core/data/repository/shared_prefrence_repository.dart';
 import 'core/services/connectivity_service.dart';

@@ -1,5 +1,7 @@
 import 'dart:convert';
-import 'package:task_P2/core/data/models/product_model.dart';
+
+import 'product_model.dart';
+
 
 class CartModel {
   ProductModel? productModel;

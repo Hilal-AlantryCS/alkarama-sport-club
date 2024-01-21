@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:task_P2/ui/shared/custom%20_widgets/custom_elavated_buttom.dart';
-import 'package:task_P2/ui/shared/shared_widgets/custom_text.dart';
-import 'package:task_P2/ui/shared/utlis.dart';
+import 'package:alkarama_sport_club/ui/shared/custom%20_widgets/custom_elavated_buttom.dart';
+import 'package:alkarama_sport_club/ui/shared/shared_widgets/custom_text.dart';
+import 'package:alkarama_sport_club/ui/shared/utlis.dart';
 
 import '../../../core/translation/app_translation.dart';
 

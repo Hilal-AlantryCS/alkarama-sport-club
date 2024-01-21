@@ -1,9 +1,10 @@
+import 'package:alkarama_sport_club/core/data/models/common_response.dart';
+import 'package:alkarama_sport_club/core/data/models/token_info.dart';
+import 'package:alkarama_sport_club/core/data/network/network_config.dart';
+import 'package:alkarama_sport_club/core/enums/request_type.dart';
+import 'package:alkarama_sport_club/core/utils/network_util.dart';
 import 'package:dartz/dartz.dart';
-import 'package:task_P2/core/data/models/common_response.dart';
-import 'package:task_P2/core/data/models/token_info.dart';
-import 'package:task_P2/core/data/network/network_config.dart';
-import 'package:task_P2/core/enums/request_type.dart';
-import 'package:task_P2/core/utils/network_util.dart';
+
 
 class AuthRepository {
   Future<Either<String, TokenInfo>> login({

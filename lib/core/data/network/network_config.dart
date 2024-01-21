@@ -1,5 +1,8 @@
-import 'package:task_P2/core/enums/request_type.dart';
-import 'package:task_P2/ui/shared/utlis.dart';
+
+
+import 'package:alkarama_sport_club/core/enums/request_type.dart';
+import 'package:alkarama_sport_club/ui/shared/utlis.dart';
+
 class NetworkConfig {
   static Map<String, String> getHeaders(
       {bool? needAuth = false,
