@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:task_P2/core/enums/connectivity_status.dart';
+import 'package:task_P2/ui/shared/custom%20_widgets/custom_container.dart';
 import 'package:task_P2/ui/shared/utlis.dart';
 
 
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
             colorScheme: ColorScheme.fromSeed(
                 seedColor: Color.fromRGBO(1, 171, 237, 100)),
           ),
-          home: SplashView()),
+          home:MyContainer()),
     );
   }
 }
