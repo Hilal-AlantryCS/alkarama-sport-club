@@ -1,7 +1,8 @@
+import 'package:alkarama_sport_club/core/data/models/product_model.dart';
+import 'package:alkarama_sport_club/ui/shared/utlis.dart';
 import 'package:get/get.dart';
-import 'package:task_P2/core/data/models/cart_model.dart';
-import 'package:task_P2/core/data/models/product_model.dart';
-import 'package:task_P2/ui/shared/utlis.dart';
+
+import '../data/models/cart_model.dart';
 
 class CartService {
   RxList<CartModel> cartList = storage.getCartList().obs;

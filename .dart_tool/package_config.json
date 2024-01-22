@@ -608,13 +608,13 @@
       "languageVersion": "2.19"
     },
     {
-      "name": "task_P2",
+      "name": "alkarama_sport_club",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2024-01-22T11:38:27.546738Z",
+  "generated": "2024-01-22T12:25:12.259719Z",
   "generator": "pub",
   "generatorVersion": "3.0.1"
 }

@@ -3,9 +3,9 @@ import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:get/get.dart';
-import 'package:task_P2/core/data/repository/auth_repository.dart';
+import 'package:alkarama_sport_club/core/data/repository/auth_repository.dart';
 
-import 'package:task_P2/core/services/location_service.dart';
+import 'package:alkarama_sport_club/core/services/location_service.dart';
 import '../../core/data/repository/shared_prefrence_repository.dart';
 import '../../core/services/connectivity_service.dart';
 import 'colors.dart';
@@ -13,12 +13,12 @@ import 'colors.dart';
 void customLoader() => BotToast.showCustomLoading(toastBuilder: (context) {
       return Container(
         decoration: BoxDecoration(
-            color: Color.fromARGB(255, 247, 103, 103).withOpacity(0.5),
+            color: AppColors.persimmonColor.withOpacity(0.5),
             borderRadius: BorderRadius.circular(10)),
         width: screenWidth(4),
         height: screenWidth(4),
         child: SpinKitCircle(
-          color: AppColors.color8,
+          color: AppColors.blackColor,
           size: screenWidth(8),
         ),
       );

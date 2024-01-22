@@ -1,7 +1,8 @@
+import 'package:alkarama_sport_club/ui/shared/utlis.dart';
 import 'package:bot_toast/bot_toast.dart';
 import 'package:geocoding/geocoding.dart' as geo;
 import 'package:location/location.dart';
-import 'package:task_P2/ui/shared/utlis.dart';
+
 
 class LocationService {
   Location location = new Location();

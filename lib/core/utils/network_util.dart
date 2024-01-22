@@ -1,10 +1,9 @@
 import 'dart:convert';
 
+import 'package:alkarama_sport_club/core/enums/request_type.dart';
 import 'package:bot_toast/bot_toast.dart';
-import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
 import 'package:path/path.dart' as path;
-import 'package:task_P2/core/enums/request_type.dart';
 import 'package:http_parser/http_parser.dart';
 
 

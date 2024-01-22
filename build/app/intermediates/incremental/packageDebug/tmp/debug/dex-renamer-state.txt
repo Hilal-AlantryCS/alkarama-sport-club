@@ -1,4 +1,4 @@
-#Sun Jan 21 19:29:44 EET 2024
+#Mon Jan 22 18:09:04 EET 2024
 base.0=C\:\\Users\\planet\\AndroidStudioProjects\\alkarama_app\\alkarama-sport-club\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
