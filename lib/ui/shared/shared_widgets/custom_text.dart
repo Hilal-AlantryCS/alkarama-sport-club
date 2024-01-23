@@ -78,6 +78,7 @@ class CustomText extends StatelessWidget {
           fontSize: fontSize,
           fontWeight: fontWeight,
           color: textColor,
+          
         );
         break;
 

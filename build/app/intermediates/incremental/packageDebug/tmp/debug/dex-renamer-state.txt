@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 #Tue Jan 23 18:38:38 EET 2024
 base.0=F\:\\Projects\\alkarama-sport-club\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
+=======
+#Tue Jan 23 18:18:15 EET 2024
+base.0=C\:\\Users\\planet\\AndroidStudioProjects\\alkarama_app\\alkarama-sport-club\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
+>>>>>>> ae39cc85f70b07647fbd46777a4f72d88945d97d

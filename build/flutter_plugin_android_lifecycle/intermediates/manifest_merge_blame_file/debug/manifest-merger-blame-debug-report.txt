@@ -4,8 +4,14 @@
 4
 5    <uses-sdk
 6        android:minSdkVersion="16"
+<<<<<<< HEAD
 6-->C:\Users\Anas\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_plugin_android_lifecycle-2.0.17\android\src\main\AndroidManifest.xml
 7        android:targetSdkVersion="16" />
 7-->C:\Users\Anas\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_plugin_android_lifecycle-2.0.17\android\src\main\AndroidManifest.xml
+=======
+6-->C:\Users\planet\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_plugin_android_lifecycle-2.0.17\android\src\main\AndroidManifest.xml
+7        android:targetSdkVersion="16" />
+7-->C:\Users\planet\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_plugin_android_lifecycle-2.0.17\android\src\main\AndroidManifest.xml
+>>>>>>> ae39cc85f70b07647fbd46777a4f72d88945d97d
 8
 9</manifest>

@@ -1,6 +1,7 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "F:\\Projects\\alkarama-sport-club\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-et\\values-et.xml",
             "map": [
                 {
@@ -22,6 +23,12 @@
                 },
                 {
                     "source": "C:\\Users\\Anas\\.gradle\\caches\\transforms-3\\354887cf6d113721c131aba73803d333\\transformed\\jetified-play-services-base-18.1.0\\res\\values-et\\values.xml",
+=======
+            "outputFile": "C:\\Users\\planet\\AndroidStudioProjects\\alkarama_app\\alkarama-sport-club\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-et\\values-et.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\planet\\.gradle\\caches\\transforms-3\\354887cf6d113721c131aba73803d333\\transformed\\jetified-play-services-base-18.1.0\\res\\values-et\\values.xml",
+>>>>>>> ae39cc85f70b07647fbd46777a4f72d88945d97d
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -38,7 +45,11 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\Anas\\.gradle\\caches\\transforms-3\\c5abcfd1a0bbf8db59d09246ed808a50\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-et\\values.xml",
+=======
+                    "source": "C:\\Users\\planet\\.gradle\\caches\\transforms-3\\c5abcfd1a0bbf8db59d09246ed808a50\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-et\\values.xml",
+>>>>>>> ae39cc85f70b07647fbd46777a4f72d88945d97d
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -53,6 +64,26 @@
                         "endColumns": "139",
                         "endOffsets": "1917"
                     }
+<<<<<<< HEAD
+=======
+                },
+                {
+                    "source": "C:\\Users\\planet\\.gradle\\caches\\transforms-3\\12d099ea686a1c4551cfcd3b667543a1\\transformed\\core-1.10.1\\res\\values-et\\values-et.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,150,252,350,453,559,664,784",
+                        "endColumns": "94,101,97,102,105,104,119,100",
+                        "endOffsets": "145,247,345,448,554,659,779,880"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,27",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,150,252,350,453,559,664,3002",
+                        "endColumns": "94,101,97,102,105,104,119,100",
+                        "endOffsets": "145,247,345,448,554,659,779,3098"
+                    }
+>>>>>>> ae39cc85f70b07647fbd46777a4f72d88945d97d
                 }
             ]
         }

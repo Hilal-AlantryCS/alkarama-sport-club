@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 [{"family":"MaterialIcons","fonts":[{"asset":"fonts/MaterialIcons-Regular.otf"}]},{"family":"packages/cupertino_icons/CupertinoIcons","fonts":[{"asset":"packages/cupertino_icons/assets/CupertinoIcons.ttf"}]}]
+=======
+[{"family":"MaterialIcons","fonts":[{"asset":"fonts/MaterialIcons-Regular.otf"}]},{"family":"Cairo","fonts":[{"weight":400,"asset":"assets/fonts/Cairo-Regular.ttf"},{"weight":600,"asset":"assets/fonts/Cairo-Medium.ttf"},{"weight":800,"asset":"assets/fonts/Cairo-Bold.ttf"}]},{"family":"packages/cupertino_icons/CupertinoIcons","fonts":[{"asset":"packages/cupertino_icons/assets/CupertinoIcons.ttf"}]}]
+>>>>>>> ae39cc85f70b07647fbd46777a4f72d88945d97d
