@@ -61,7 +61,7 @@ Locale getLocal() {
   else if (langCode == 'en')
     return Locale('en', 'US');
   else
-    return Locale('fr', 'FR');
+    return Locale('ar', 'SA');
 }
 
 void changeLanguage(String code) {
