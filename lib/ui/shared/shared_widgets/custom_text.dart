@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:task_P2/core/enums/text_style_type.dart';
-import 'package:task_P2/ui/shared/colors.dart';
-import 'package:task_P2/ui/shared/utlis.dart';
+import 'package:alkarama_sport_club/core/enums/text_style_type.dart';
+import 'package:alkarama_sport_club/ui/shared/colors.dart';
+import 'package:alkarama_sport_club/ui/shared/utlis.dart';
 
 class CustomText extends StatelessWidget {
   final String text;
@@ -17,8 +17,8 @@ class CustomText extends StatelessWidget {
     super.key,
     required this.text,
     this.styleType,
-    this.textColor = AppColors.color3,
-    this.fontWeight = FontWeight.normal,
+    this.textColor,
+    this.fontWeight,
     this.fontSize,
     this.alignText,
   });
@@ -36,55 +36,57 @@ class CustomText extends StatelessWidget {
     TextStyle result = TextStyle();
 
     switch (styleType) {
-      case TextStyleType.PX12:
+      case TextStyleType.TITLE:
         result = TextStyle(
-            fontSize: screenWidth(31),
-            fontWeight: fontWeight,
-            color: textColor);
-        break;
-      case TextStyleType.PX14:
-        result = TextStyle(
-            fontSize: screenWidth(26.8),
-            fontWeight: fontWeight,
-            color: textColor);
-        break;
-      case TextStyleType.PX16:
-        result = TextStyle(
-            fontSize: screenWidth(23.5),
-            fontWeight: fontWeight,
-            color: textColor);
-        break;
-      case TextStyleType.PX20:
-        result = TextStyle(
-            fontSize: screenWidth(18.8),
+            fontSize: screenWidth(26.5),
             fontWeight: fontWeight ?? FontWeight.bold,
-            color: textColor);
+            color: textColor ?? AppColors.whiteColor);
         break;
-      case TextStyleType.PX24:
+      case TextStyleType.SUBTITLE:
         result = TextStyle(
-            fontSize: screenWidth(15.6),
+            fontSize: screenWidth(23.2),
             fontWeight: fontWeight ?? FontWeight.bold,
-            color: textColor);
+            color: textColor ?? AppColors.blackColor);
         break;
-      case TextStyleType.PX34:
+      case TextStyleType.BODY:
         result = TextStyle(
-            fontSize: screenWidth(11),
-            fontWeight: fontWeight ?? FontWeight.bold,
-            color: textColor);
+            fontSize: screenWidth(31.2),
+            fontWeight: fontWeight ?? FontWeight.normal,
+            color: textColor ?? AppColors.blackColor);
         break;
+      case TextStyleType.SMALL:
+        result = TextStyle(
+            fontSize: screenWidth(33),
+            fontWeight: fontWeight ?? FontWeight.normal,
+            color: textColor ?? AppColors.blackColor);
+        break;
+      case TextStyleType.NAME:
+        result = TextStyle(
+            fontSize: screenWidth(15),
+            fontWeight: fontWeight ?? FontWeight.normal,
+            color: textColor ?? AppColors.blackColor);
+        break;
+      case TextStyleType.DATE:
+        result = TextStyle(
+            fontSize: screenWidth(26),
+            fontWeight: fontWeight ?? FontWeight.normal,
+            color: textColor ?? AppColors.blackColor);
+        break;
+
       case TextStyleType.CUSTOM:
         result = TextStyle(
           fontSize: fontSize,
           fontWeight: fontWeight,
           color: textColor,
+          
         );
         break;
 
       default:
         result = TextStyle(
-            fontSize: screenWidth(26.8),
-            fontWeight: fontWeight,
-            color: textColor);
+            fontSize: screenWidth(31.2),
+            fontWeight: fontWeight ?? FontWeight.normal,
+            color: textColor ?? AppColors.blackColor);
         break;
     }
 
