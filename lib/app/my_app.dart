@@ -1,13 +1,14 @@
 import 'package:alkarama_sport_club/core/enums/connectivity_status.dart';
+import 'package:alkarama_sport_club/core/translation/app_translation.dart';
+import 'package:alkarama_sport_club/ui/shared/colors.dart';
 import 'package:alkarama_sport_club/ui/shared/utlis.dart';
+import 'package:alkarama_sport_club/ui/views/main_view/main_view.dart';
+import 'package:alkarama_sport_club/ui/views/splash_view/spalsh_view.dart';
 import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 
-
-import '../core/translation/app_translation.dart';
-import '../ui/views/splash_view/spalsh_view.dart';
 import 'my_app_controller.dart';
 
 class MyApp extends StatelessWidget {
@@ -22,17 +23,17 @@ class MyApp extends StatelessWidget {
           connectivitySerivce.connectivityStatusController.stream,
       initialData: ConnectivityStatus.OFFLINE,
       child: GetMaterialApp(
-          locale: getLocal(),
-          translations: AppTranslation(),
-          builder: BotToastInit(), //1. call BotToastInit
-          navigatorObservers: [BotToastNavigatorObserver()],
-          debugShowCheckedModeBanner: false,
-          title: 'Flutter Demo',
-          theme: ThemeData(
-            colorScheme: ColorScheme.fromSeed(
-                seedColor: Color.fromRGBO(1, 171, 237, 100)),
-          ),
-          home: SplashView()),
+        locale: getLocal(),
+        translations: AppTranslation(),
+        builder: BotToastInit(), //1. call BotToastInit
+        navigatorObservers: [BotToastNavigatorObserver()],
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: AppColors.blueColor),
+        ),
+        home: MainView(),
+      ),
     );
   }
 }

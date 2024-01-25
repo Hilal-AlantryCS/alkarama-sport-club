@@ -1,0 +1,4 @@
+#Tue Jan 23 18:30:26 GMT+02:00 2024
+base.0=C\:\\Darbni\\alkarama_sport_club\\alkarama-sport-club\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

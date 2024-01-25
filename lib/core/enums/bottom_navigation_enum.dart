@@ -1,6 +1,7 @@
 enum BottomNavigationEnum {
   HOME,
-  NOTIFICATIONS,
-  FAVORITE,
-  SETTINGS,
+  SCCORE,
+  MATCHES,
+  ABOUT,
+  MUSEUM,
 }

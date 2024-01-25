@@ -5,7 +5,6 @@ import 'package:alkarama_sport_club/core/enums/data_type.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-
 class SharedPrefrenceRepository {
   SharedPreferences pref = Get.find<SharedPreferences>();
 
@@ -82,7 +81,7 @@ class SharedPrefrenceRepository {
     if (pref.containsKey(PREF_APP_LANG)) {
       return getPrefrence(PREF_APP_LANG);
     } else {
-      return 'en';
+      return 'ar';
     }
   }
 
@@ -95,13 +94,10 @@ class SharedPrefrenceRepository {
 
   List<CartModel> getCartList() {
     if (pref.containsKey(PREF_CART_LIST))
-    
       return CartModel.decode(getPrefrence(PREF_CART_LIST));
     else
       return [];
   }
-
-  
 
   //*====================================
 
