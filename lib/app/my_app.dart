@@ -1,5 +1,5 @@
 import 'package:alkarama_sport_club/core/enums/connectivity_status.dart';
-import 'package:alkarama_sport_club/ui/shared/custom%20_widgets/custom_container.dart';
+import 'package:alkarama_sport_club/ui/shared/shared_widgets/custom_container.dart';
 import 'package:alkarama_sport_club/ui/shared/shared_widgets/custom_tob_container.dart';
 import 'package:alkarama_sport_club/ui/shared/utlis.dart';
 import 'package:alkarama_sport_club/ui/views/about%20clup/about%20clup_view.dart';
