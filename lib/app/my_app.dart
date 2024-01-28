@@ -9,7 +9,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 
-
 import '../core/translation/app_translation.dart';
 import '../ui/views/splash_view/spalsh_view.dart';
 import 'my_app_controller.dart';
@@ -37,6 +36,14 @@ class MyApp extends StatelessWidget {
               colorScheme: ColorScheme.fromSeed(
                   seedColor: Color.fromRGBO(1, 171, 237, 100)),
             ),
-            home:AboutClubView()));
+            home: Column(
+              children: [
+                TobContainer(
+                  isimageball: true,
+                  text: 'النادي',
+                  iconArrowForward: Icons.arrow_forward_ios_outlined,
+                ),
+              ],
+            )));
   }
 }
