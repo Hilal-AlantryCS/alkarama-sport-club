@@ -1,9 +1,9 @@
 import 'package:alkarama_sport_club/core/enums/text_style_type.dart';
 import 'package:alkarama_sport_club/ui/shared/colors.dart';
 import 'package:alkarama_sport_club/ui/shared/custom%20_widgets/custom_text.dart';
-
 import 'package:alkarama_sport_club/ui/shared/utlis.dart';
 import 'package:flutter/material.dart';
+
 
 class CustomContainerText extends StatelessWidget {
   final String text;
@@ -27,6 +27,7 @@ class CustomContainerText extends StatelessWidget {
       CustomText(
         text: text,
         styleType: TextStyleType.TITLE,
+        textColor: AppColors.blackColor,
         fontWeight:FontWeight.w400
       ),
       Row(
@@ -41,7 +42,7 @@ class CustomContainerText extends StatelessWidget {
             ),
           ),
           SizedBox(
-            width: screenWidth(200),
+            width: screenWidth(400),
           ),
           Container(
             height: screenWidth(70),
@@ -49,7 +50,7 @@ class CustomContainerText extends StatelessWidget {
             decoration: BoxDecoration(color: color ?? AppColors.orangeColor,borderRadius: BorderRadius.circular(50),),
           ),
           SizedBox(
-            width: screenWidth(200),
+            width: screenWidth(400),
           ),
           Container(
             height: screenWidth(70),
