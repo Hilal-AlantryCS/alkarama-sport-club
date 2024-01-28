@@ -39,9 +39,8 @@ class TobContainer extends StatelessWidget {
                 CustomText(
                   text: text,
                   styleType: TextStyleType.SUBTITLE,
-                  textColor: AppColors.whiteColor,
                   fontWeight: FontWeight.w500,
-                ),
+                )
               ],
             ),
           ),
