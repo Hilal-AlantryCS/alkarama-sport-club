@@ -21,7 +21,8 @@ class CustomText extends StatelessWidget {
     this.textColor,
     this.fontWeight,
     this.fontSize,
-    this.alignText, this.overflow,
+    this.alignText,
+    this.overflow,
   });
 
   @override
@@ -39,15 +40,15 @@ class CustomText extends StatelessWidget {
     switch (styleType) {
       case TextStyleType.TITLE:
         result = TextStyle(
-            fontSize: screenWidth(15),
+            fontSize: screenWidth(23),
             fontWeight: fontWeight ?? FontWeight.bold,
-            color: textColor ?? AppColors.whiteColor);
+            color: textColor ?? AppColors.blackColor);
         break;
       case TextStyleType.SUBTITLE:
         result = TextStyle(
-            fontSize: screenWidth(23),
+            fontSize: screenWidth(26.2),
             fontWeight: fontWeight ?? FontWeight.w800,
-            color: textColor ?? AppColors.blackColor);
+            color: textColor ?? AppColors.whiteColor);
         break;
       case TextStyleType.BODY:
         result = TextStyle(
@@ -79,7 +80,6 @@ class CustomText extends StatelessWidget {
           fontSize: fontSize,
           fontWeight: fontWeight,
           color: textColor,
-          
         );
         break;
 
