@@ -1,6 +1,5 @@
 import 'package:alkarama_sport_club/core/enums/text_style_type.dart';
 import 'package:alkarama_sport_club/ui/shared/custom%20_widgets/custom_text.dart';
-
 import 'package:alkarama_sport_club/ui/shared/utlis.dart';
 import 'package:flutter/material.dart';
 
@@ -15,17 +14,16 @@ class CustomShield extends StatelessWidget {
       children: [
         Image.asset(
           'assets/images/pngs/shield.png',
-          width: screenWidth(10),
+          width: screenWidth(14),
         ),
-        Positioned(
-            bottom: screenWidth(50),
-            right: screenWidth(30),
+        Container(
+            width: screenWidth(14),
             child: Column(
               children: [
                 CustomText(
                   text: upTxt,
                   fontSize: 8,
-                  fontWeight: FontWeight.bold,
+                  fontWeight: FontWeight.w900,
                   styleType: TextStyleType.CUSTOM,
                 ),
                 CustomText(
