@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\planet\\AndroidStudioProjects\\alkarama_app1\\alkarama-sport-club\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fa\\values-fa.xml",
+            "outputFile": "F:\\Projects\\alkarama-sport-club\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fa\\values-fa.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\planet\\.gradle\\caches\\transforms-3\\12d099ea686a1c4551cfcd3b667543a1\\transformed\\core-1.10.1\\res\\values-fa\\values-fa.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,154,256,355,455,556,662,779",
-                        "endColumns": "98,101,98,99,100,105,116,100",
-                        "endOffsets": "149,251,350,450,551,657,774,875"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,27",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,154,256,355,455,556,662,3005",
-                        "endColumns": "98,101,98,99,100,105,116,100",
-                        "endOffsets": "149,251,350,450,551,657,774,3101"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\planet\\.gradle\\caches\\transforms-3\\354887cf6d113721c131aba73803d333\\transformed\\jetified-play-services-base-18.1.0\\res\\values-fa\\values.xml",
+                    "source": "C:\\Users\\Anas\\.gradle\\caches\\transforms-3\\354887cf6d113721c131aba73803d333\\transformed\\jetified-play-services-base-18.1.0\\res\\values-fa\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\planet\\.gradle\\caches\\transforms-3\\c5abcfd1a0bbf8db59d09246ed808a50\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-fa\\values.xml",
+                    "source": "C:\\Users\\Anas\\.gradle\\caches\\transforms-3\\12d099ea686a1c4551cfcd3b667543a1\\transformed\\core-1.10.1\\res\\values-fa\\values-fa.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,154,256,355,455,556,662,779",
+                        "endColumns": "98,101,98,99,100,105,116,100",
+                        "endOffsets": "149,251,350,450,551,657,774,875"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,27",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,154,256,355,455,556,662,3005",
+                        "endColumns": "98,101,98,99,100,105,116,100",
+                        "endOffsets": "149,251,350,450,551,657,774,3101"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Anas\\.gradle\\caches\\transforms-3\\c5abcfd1a0bbf8db59d09246ed808a50\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-fa\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

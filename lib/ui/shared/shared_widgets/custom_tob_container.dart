@@ -39,7 +39,7 @@ class TobContainer extends StatelessWidget {
                 CustomText(
                   text: text,
                   styleType: TextStyleType.SUBTITLE,
-                  fontWeight: FontWeight.w500,
+                  fontWeight: FontWeight.bold,
                 )
               ],
             ),
