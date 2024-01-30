@@ -25,14 +25,14 @@ class CustomLatestNews extends StatelessWidget {
           color: AppColors.whiteColor, borderRadius: BorderRadius.circular(20)),
       child:Stack(
         children: [
-          CustomImg(name: 'Rectangle 90',width: screenWidth(3),height: screenWidth(3),),
+          CustomImg(name: 'Rectangle 90',width: screenWidth(2.5),height: screenWidth(2.5),),
           Positioned(
             top: screenWidth(30),
-            right: screenWidth(2.93),
+            right: screenWidth(2.5),
             child: Column(
               children: [
                 CustomText(text: '''نهاية اللقاء بفوز فريقنا على فريق
-الوثبة بهدفين مقابل هدف  ''',styleType: TextStyleType.SUBTITLE,textColor: AppColors.blackColor,fontSize:screenWidth(26.8),),
+الوثبة بهدفين مقابل هدف  ''',textColor: AppColors.blackColor),
               SizedBox(height: screenWidth(30),),
               Row(              
                 children: [

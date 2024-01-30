@@ -82,7 +82,7 @@ class _HomeViewState extends State<HomeView> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             CustomContainerText(
-                text: 'أخر الأخبار',
+                text: 'آخر الأخبار',
                 widthone: screenWidth(5.1),
                 widthtwo: screenWidth(20),
                 widththree: screenWidth(15)),
@@ -94,7 +94,7 @@ class _HomeViewState extends State<HomeView> {
                   },
                   child: CustomText(
                       text: 'مشاهدة الكل',
-                      styleType: TextStyleType.SUBTITLE,
+                      
                       textColor: AppColors.blackColor,
                       fontWeight: FontWeight.w400),
                 )),

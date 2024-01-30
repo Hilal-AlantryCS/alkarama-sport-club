@@ -9,5 +9,5 @@ class AppColors {
   static const Color orangeColor = Color.fromRGBO(255, 99, 3, 1);
   static const Color yellowColor = Color.fromRGBO(223, 204, 34, 1);
   static const Color goldColor = Color.fromRGBO(208, 163, 47, 1);
-  static const Color greyColor = Color.fromRGBO(225, 225, 225, 1);
+  static const Color greyColor = Color.fromRGBO(128, 129, 145, 1);
 }

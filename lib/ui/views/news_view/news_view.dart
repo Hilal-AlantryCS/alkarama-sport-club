@@ -1,6 +1,7 @@
 import 'package:alkarama_sport_club/ui/shared/shared_widgets/custom_latest_news.dart';
 import 'package:alkarama_sport_club/ui/shared/shared_widgets/custom_tob_container.dart';
 import 'package:alkarama_sport_club/ui/shared/utlis.dart';
+import 'package:alkarama_sport_club/ui/views/news_details_view/news_details_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -29,8 +30,10 @@ class _NewsViewState extends State<NewsView> {
                 itemCount: 10,
                 itemBuilder: (BuildContext context, int index) {
                   return InkWell(
-                    
-                    child: CustomLatestNews(marginend:screenWidth(20),marginstart:screenWidth(20),marginbottom:screenWidth(150)));
+                    onTap:(){
+                    Get.to(NewsDetailsView());
+                    },
+                    child: CustomLatestNews(marginend:screenWidth(20),marginstart:screenWidth(20),marginbottom:screenWidth(50)));
                 }),
           )
         ],

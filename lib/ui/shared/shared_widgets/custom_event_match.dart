@@ -22,9 +22,9 @@ class CustomEventMatch extends StatelessWidget {
       child: Stack(children: [
         Positioned(
             top: screenWidth(40),
-            right: screenWidth(2.22),
+            right: screenWidth(2.15),
             child: CustomText(
-                text: ' المباراة القادمة', styleType: TextStyleType.SUBTITLE)),
+                text: ' المباراة القادمة', styleType: TextStyleType.SUBTITLE,fontWeight:FontWeight.w400,)),
         Align(
             alignment: Alignment.centerRight,
             child: CustomImg(
@@ -42,6 +42,7 @@ class CustomEventMatch extends StatelessWidget {
             child: CustomText(
               text: 'ALWATHBA',
               styleType: TextStyleType.SMALL,
+              textColor: AppColors.whiteColor,
             )),
 
         Positioned(
@@ -54,6 +55,7 @@ class CustomEventMatch extends StatelessWidget {
             child: CustomText(
               text: 'ALkarama',
               styleType: TextStyleType.SMALL,
+              textColor: AppColors.whiteColor,
             )),
         Positioned(
             top: screenWidth(8),

@@ -1,4 +1,5 @@
 import 'package:alkarama_sport_club/core/enums/text_style_type.dart';
+import 'package:alkarama_sport_club/ui/shared/colors.dart';
 import 'package:alkarama_sport_club/ui/shared/custom%20_widgets/custom_text.dart';
 import 'package:alkarama_sport_club/ui/shared/utlis.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,7 @@ class CustomRow extends StatelessWidget {
       children: [
         Image.asset('assets/images/pngs/$icon.png',width: screenWidth(22),height: screenWidth(15),color: color,),
         SizedBox(width: screenWidth(60),),
-        CustomText(text: text,styleType:styleType?? TextStyleType.SMALL,fontWeight: FontWeight.w800,fontSize: screenWidth(49),textColor: textColor,)
+        CustomText(text: text,styleType:styleType?? TextStyleType.CUSTOM,fontSize: screenWidth(40),textColor: AppColors.greyColor,)
       ],
     );
   }
