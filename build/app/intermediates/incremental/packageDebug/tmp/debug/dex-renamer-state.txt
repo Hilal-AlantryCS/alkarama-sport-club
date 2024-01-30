@@ -1,4 +1,4 @@
-#Wed Jan 24 13:11:18 AST 2024
-base.0=E\:\\FlutterPro\\alkarama-sport-club\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
-path.0=classes.dex
+#Sun Jan 28 18:44:12 EET 2024
+base.0=C\:\\Users\\planet\\AndroidStudioProjects\\alkarama_app1\\alkarama-sport-club\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
+path.0=classes.dex

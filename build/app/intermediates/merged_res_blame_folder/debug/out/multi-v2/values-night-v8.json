@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\FlutterPro\\alkarama-sport-club\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "C:\\Users\\planet\\AndroidStudioProjects\\alkarama_app1\\alkarama-sport-club\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "E:\\FlutterPro\\alkarama-sport-club\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "C:\\Users\\planet\\AndroidStudioProjects\\alkarama_app1\\alkarama-sport-club\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
