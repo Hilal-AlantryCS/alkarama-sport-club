@@ -1,16 +1,6 @@
 import 'package:alkarama_sport_club/core/enums/connectivity_status.dart';
-<<<<<<< HEAD
-import 'package:alkarama_sport_club/ui/shared/shared_widgets/custom_tob_container.dart';
 import 'package:alkarama_sport_club/ui/shared/utlis.dart';
-import 'package:alkarama_sport_club/ui/views/player_and_admins_view/player_and_admins_view.dart';
-=======
-
-import 'package:alkarama_sport_club/ui/shared/shared_widgets/custom_tob_container.dart';
-import 'package:alkarama_sport_club/ui/shared/utlis.dart';
-import 'package:alkarama_sport_club/ui/views/aboutclup/aboutclup_view.dart';
 import 'package:alkarama_sport_club/ui/views/home_view/home_view.dart';
-import 'package:alkarama_sport_club/ui/views/splash_view/spalsh_view.dart';
->>>>>>> home
 import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -41,18 +31,6 @@ class MyApp extends StatelessWidget {
               colorScheme: ColorScheme.fromSeed(
                   seedColor: Color.fromRGBO(1, 171, 237, 100)),
             ),
-<<<<<<< HEAD
-            home: Column(
-              children: [
-                TobContainer(
-                  isimageball: true,
-                  iconArrowForward: Icons.arrow_forward_ios_rounded,
-                  text: 'النادي',
-                ),
-              ],
-            )));
-=======
-            home:HomeView()));
->>>>>>> home
+            home: HomeView()));
   }
 }

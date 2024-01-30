@@ -1,6 +1,5 @@
 import 'package:alkarama_sport_club/ui/shared/colors.dart';
 import 'package:alkarama_sport_club/ui/shared/custom%20_widgets/custom_img.dart';
-import 'package:alkarama_sport_club/ui/shared/shared_widgets/custom_tob_container.dart';
 import 'package:alkarama_sport_club/ui/shared/utlis.dart';
 import 'package:alkarama_sport_club/ui/views/news_details_view/news_details_view_widgets/custom_result_match.dart';
 import 'package:dots_indicator/dots_indicator.dart';
