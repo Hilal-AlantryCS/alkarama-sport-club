@@ -13,8 +13,10 @@ class PlayerView extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
+          appBar: TobContainer(text: 'نادي الكرامة الرياضي'),
       body: ListView(children: [
-        TobContainer(text: 'نادي الكرامة الرياضي', isimageball: true),
+        
+        
         Padding(
           padding:
               EdgeInsets.only(top: screenWidth(100), bottom: screenWidth(100)),

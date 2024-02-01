@@ -18,9 +18,10 @@ class _NewsViewState extends State<NewsView> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
+          appBar: TobContainer(text: 'الأخبار',sizebox: SizedBox(),),
       body: Column(
         children: [
-          TobContainer(text: 'الأخبار',isimageball:false),
+         
           SizedBox(height: screenWidth(20),),
           Expanded(
             child: ListView.builder(

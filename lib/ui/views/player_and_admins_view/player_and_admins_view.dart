@@ -14,9 +14,10 @@ class PlayerAndAdminsView extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
+          appBar: TobContainer(text: 'كادر الإدارة واللاعبين'),
             body: ListView(
       children: [
-        TobContainer(text: 'كادر الإدارة واللاعبين', isimageball: true),
+      
         ListView(
           physics: NeverScrollableScrollPhysics(),
           shrinkWrap: true,

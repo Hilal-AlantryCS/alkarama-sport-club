@@ -19,7 +19,7 @@ class CustomRow extends StatelessWidget {
       children: [
         Image.asset('assets/images/pngs/$icon.png',width: screenWidth(22),height: screenWidth(15),color: color,),
         SizedBox(width: screenWidth(60),),
-        CustomText(text: text,styleType:styleType?? TextStyleType.CUSTOM,fontSize: screenWidth(40),textColor: AppColors.greyColor,)
+        CustomText(text: text,styleType:styleType?? TextStyleType.CUSTOM,fontSize: screenWidth(40),textColor:textColor ??AppColors.whiteColor,)
       ],
     );
   }

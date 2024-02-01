@@ -17,12 +17,9 @@ class _AboutClubViewState extends State<AboutClubView> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
+          appBar:TobContainer(text: 'عن النادي') ,
             body: ListView(
       children: [
-        TobContainer(
-          text: 'عن النادي',
-          isimageball: false,
-        ),
         Padding(
           padding: EdgeInsetsDirectional.only(
               top: screenWidth(20),
@@ -195,6 +192,7 @@ class _AboutClubViewState extends State<AboutClubView> {
                   text: 'كرة السلة في نادي الكرامة :',
                   styleType: TextStyleType.SUBTITLE,
                   textColor: AppColors.blackColor),
+              SizedBox(height: screenWidth(50),),
               Image.asset(
                 'assets/images/pngs/Rectangle 115.png',
                 width: screenWidth(0.1),
