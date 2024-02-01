@@ -35,15 +35,14 @@ class NavItem extends StatelessWidget {
           //                   BorderSide(color: AppColors.blueColor, width: 4))
           //           : null),
           // ),
-          Image.asset(
-            icon,
-            width: screenWidth(10),
-            // color: AppColors.whiteColor,
-          ),
+          Image.asset(icon,
+              width: screenWidth(10),
+              color: isSelected ? AppColors.orangeColor : AppColors.whiteColor),
           CustomText(
             text: title,
             styleType: TextStyleType.SUBTITLE,
-            textColor: isSelected ? AppColors.whiteColor : AppColors.goldColor,
+            textColor:
+                isSelected ? AppColors.orangeColor : AppColors.whiteColor,
           )
         ],
       ),

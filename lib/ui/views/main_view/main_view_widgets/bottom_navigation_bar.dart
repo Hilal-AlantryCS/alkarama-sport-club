@@ -1,5 +1,4 @@
 import 'package:alkarama_sport_club/core/enums/text_style_type.dart';
-import 'package:alkarama_sport_club/core/translation/app_translation.dart';
 import 'package:alkarama_sport_club/ui/shared/colors.dart';
 import 'package:alkarama_sport_club/ui/shared/custom%20_widgets/custom_text.dart';
 import 'package:alkarama_sport_club/ui/shared/utlis.dart';
@@ -47,7 +46,7 @@ class _CustomBottmNavigationState extends State<CustomBottmNavigation> {
                     icon: "assets/images/pngs/ic_home.png",
                     isSelected:
                         widget.selectedView == BottomNavigationEnum.HOME,
-                    title: tr("home_key"),
+                    title: "الرئيسية",
                   ),
                   NavItem(
                     onTap: () {
@@ -56,7 +55,7 @@ class _CustomBottmNavigationState extends State<CustomBottmNavigation> {
                     icon: "assets/images/pngs/ic_improvement.png",
                     isSelected:
                         widget.selectedView == BottomNavigationEnum.SCCORE,
-                    title: tr("sccore_key"),
+                    title: "النتائج",
                   ),
                   SizedBox(width: screenWidth(7)),
                   // NavItem(
@@ -75,7 +74,7 @@ class _CustomBottmNavigationState extends State<CustomBottmNavigation> {
                     icon: "assets/images/pngs/ic_about_club.png",
                     isSelected:
                         widget.selectedView == BottomNavigationEnum.ABOUT,
-                    title: tr("about_club_key"),
+                    title: "عن النادي",
                   ),
                   NavItem(
                     onTap: () {
@@ -84,7 +83,7 @@ class _CustomBottmNavigationState extends State<CustomBottmNavigation> {
                     icon: "assets/images/pngs/ic_museum.png",
                     isSelected:
                         widget.selectedView == BottomNavigationEnum.MUSEUM,
-                    title: tr("museum_key"),
+                    title: "المتحف",
                   ),
                 ],
               ),
@@ -115,9 +114,9 @@ class _CustomBottmNavigationState extends State<CustomBottmNavigation> {
                     ),
                   ),
                   CustomText(
-                    text: tr("matches_key"),
+                    text: "المباريات",
                     styleType: TextStyleType.SUBTITLE,
-                    textColor: AppColors.whiteColor,
+                    textColor:  AppColors.whiteColor,
                   ),
                 ],
               ),
