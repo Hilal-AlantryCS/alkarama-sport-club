@@ -1,4 +1,4 @@
-import 'package:alkarama_sport_club/ui/views/main_view/about_club_view/about_club_view.dart';
+import 'package:alkarama_sport_club/ui/views/main_view/about_clup_view/about_clup_view.dart';
 import 'package:alkarama_sport_club/ui/views/main_view/home_view/home_view.dart';
 import 'package:alkarama_sport_club/ui/views/main_view/main_controller.dart';
 import 'package:alkarama_sport_club/ui/views/main_view/main_view_widgets/bottom_navigation_bar.dart';
