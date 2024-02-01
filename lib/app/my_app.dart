@@ -1,6 +1,6 @@
 import 'package:alkarama_sport_club/core/enums/connectivity_status.dart';
 import 'package:alkarama_sport_club/ui/shared/utlis.dart';
-import 'package:alkarama_sport_club/ui/views/home_view/home_view.dart';
+import 'package:alkarama_sport_club/ui/views/player_view/player_view.dart';
 import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -31,6 +31,6 @@ class MyApp extends StatelessWidget {
               colorScheme: ColorScheme.fromSeed(
                   seedColor: Color.fromRGBO(1, 171, 237, 100)),
             ),
-            home: HomeView()));
+            home: PlayerView()));
   }
 }
