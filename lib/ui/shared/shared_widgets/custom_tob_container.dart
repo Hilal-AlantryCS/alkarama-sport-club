@@ -19,7 +19,7 @@ class TobContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: screenWidth(1),
-      height: screenWidth(3.4),
+      height: screenWidth(4),
       decoration: BoxDecoration(
           color: AppColors.blueColor,
           borderRadius: BorderRadiusDirectional.only(
@@ -29,7 +29,7 @@ class TobContainer extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Padding(
-            padding: EdgeInsetsDirectional.only(top: screenWidth(15)),
+            padding: EdgeInsetsDirectional.only(top: screenWidth(50)),
             child: Row(
               children: [
                 Image.asset(
@@ -47,7 +47,7 @@ class TobContainer extends StatelessWidget {
           Padding(
             padding: EdgeInsetsDirectional.only(start: screenWidth(25)),
             child: Padding(
-              padding: EdgeInsetsDirectional.only(top: screenWidth(12)),
+              padding: EdgeInsetsDirectional.only(top: screenWidth(40)),
               child: Row(
                 children: [
                   isimageball

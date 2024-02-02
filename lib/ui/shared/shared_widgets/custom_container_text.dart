@@ -10,14 +10,16 @@ class CustomContainerText extends StatelessWidget {
   final double? widthone;
   final double? widthtwo;
   final double? widththree;
-  final Color? color;
+  final Color? color1;
+  final Color? color2;
+  final Color? color3;
   const CustomContainerText({
     super.key,
     required this.text,
-    this.color,
+  
     this.widthone,
     this.widthtwo,
-    this.widththree,
+    this.widththree, this.color1, this.color2, this.color3,
   });
 
   @override
@@ -37,7 +39,7 @@ class CustomContainerText extends StatelessWidget {
                 width: widthone ?? screenWidth(3.5),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50),
-                  color: color ?? AppColors.blueColor,
+                  color: color1 ?? AppColors.blueColor,
                 ),
               ),
               SizedBox(
@@ -47,7 +49,7 @@ class CustomContainerText extends StatelessWidget {
                 height: screenWidth(70),
                 width: widthtwo ?? screenWidth(11),
                 decoration: BoxDecoration(
-                  color: color ?? AppColors.orangeColor,
+                  color: color2 ?? AppColors.orangeColor,
                   borderRadius: BorderRadius.circular(50),
                 ),
               ),
@@ -58,7 +60,7 @@ class CustomContainerText extends StatelessWidget {
                 height: screenWidth(70),
                 width: widththree ?? screenWidth(8.5),
                 decoration: BoxDecoration(
-                  color: color ?? AppColors.blueColor,
+                  color: color3 ?? AppColors.blueColor,
                   borderRadius: BorderRadius.circular(50),
                 ),
               ),
