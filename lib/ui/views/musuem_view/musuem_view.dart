@@ -8,6 +8,7 @@ import 'package:alkarama_sport_club/ui/shared/shared_widgets/custom_container_im
 import 'package:alkarama_sport_club/ui/shared/shared_widgets/custom_container_text.dart';
 import 'package:alkarama_sport_club/ui/shared/shared_widgets/custom_individual_awards.dart';
 import 'package:alkarama_sport_club/ui/shared/shared_widgets/custom_tob_container.dart';
+import 'package:alkarama_sport_club/ui/shared/shared_widgets/custom_vedio.dart.dart';
 import 'package:alkarama_sport_club/ui/shared/utlis.dart';
 import 'package:flutter/material.dart';
 
@@ -352,6 +353,37 @@ class _MusuemViewState extends State<MusuemView> {
                 widthone: screenWidth(2.6),
                 widthtwo: screenWidth(13),
                 widththree: screenWidth(12),
+              ),
+              SizedBox(
+                height: screenWidth(15),
+              ),
+              SizedBox(
+                height: screenWidth(3.2),
+                child: ListView(
+                  padding: EdgeInsetsDirectional.only(
+                    start: screenWidth(24),
+                  ),
+                  shrinkWrap: true,
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    CustomContainerVideo1(
+                      color: AppColors.blueColor,
+                      text:
+                          'هدف اللاعب محمد صهيوني في مرمى الوحدة الدوري السوري',
+                    ),
+                    SizedBox(
+                      width: screenWidth(30),
+                    ),
+                    CustomContainerVideo1(
+                      color: AppColors.blueColor,
+                      text:
+                          'هدف اللاعب محمد صهيوني في مرمى الوحدة الدوري السوري',
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: screenWidth(3),
               )
             ],
           ),

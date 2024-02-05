@@ -21,7 +21,7 @@ class Individual_Awards extends StatelessWidget {
         height: screenWidth(1.4),
         decoration: BoxDecoration(
             color: AppColors.blueColor,
-            borderRadius: BorderRadius.circular(22)),
+            borderRadius: BorderRadius.circular(35)),
         child: Column(
           children: [
             Image.asset(
