@@ -1,6 +1,8 @@
 import 'package:alkarama_sport_club/core/enums/connectivity_status.dart';
 import 'package:alkarama_sport_club/ui/shared/utlis.dart';
-import 'package:alkarama_sport_club/ui/views/player_view/player_view.dart';
+import 'package:alkarama_sport_club/ui/views/main_view/museum_view/museum_view.dart';
+import 'package:alkarama_sport_club/ui/views/musuem_view/musuem_view.dart';
+import 'package:alkarama_sport_club/ui/views/player_and_admins_view/player_and_admins_view.dart';
 import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -31,6 +33,6 @@ class MyApp extends StatelessWidget {
               colorScheme: ColorScheme.fromSeed(
                   seedColor: Color.fromRGBO(1, 171, 237, 100)),
             ),
-            home: PlayerView()));
+            home: MusuemView()));
   }
 }
