@@ -1,8 +1,8 @@
 import 'package:alkarama_sport_club/ui/views/main_view/home_view/home_view.dart';
+import 'package:alkarama_sport_club/ui/views/main_view/maches_view/matches_view.dart';
 import 'package:alkarama_sport_club/ui/views/main_view/main_controller.dart';
 import 'package:alkarama_sport_club/ui/views/main_view/main_view_widgets/bottom_navigation_bar.dart';
-import 'package:alkarama_sport_club/ui/views/main_view/matches_view/matches_view.dart';
-import 'package:alkarama_sport_club/ui/views/main_view/museum_view/museum_view.dart';
+import 'package:alkarama_sport_club/ui/views/main_view/musuem_view/musuem_view.dart';
 import 'package:alkarama_sport_club/ui/views/main_view/sccore_view/sccore_view.dart';
 import 'package:alkarama_sport_club/ui/views/player_and_admins_view/player_and_admins_view.dart';
 import 'package:flutter/material.dart';
@@ -39,7 +39,7 @@ class _MainViewState extends State<MainView> {
             SccoreView(),
             MatchesView(),
             PlayerAndAdminsView(),
-            MuseumView(),
+            MusuemView(),
           ],
           // onPageChanged: ((index) {
           //   if (index == 0)

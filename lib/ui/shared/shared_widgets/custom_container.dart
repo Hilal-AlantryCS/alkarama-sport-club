@@ -44,7 +44,7 @@ class MyContainer extends StatelessWidget {
                     text: title,
                     styleType: TextStyleType.SUBTITLE,
                     textColor: AppColors.whiteColor,
-                    fontWeight: FontWeight.w700,
+                    fontWeight: FontWeight.w500,
                   )
                 ],
               ),
@@ -63,7 +63,7 @@ class MyContainer extends StatelessWidget {
             child: CustomText(
               text: text,
               styleType: TextStyleType.BODY,
-              fontWeight: FontWeight.w500,
+              fontWeight: FontWeight.w600,
               textColor: AppColors.blackColor,
             ),
           )
