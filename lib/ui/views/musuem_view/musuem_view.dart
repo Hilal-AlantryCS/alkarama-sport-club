@@ -24,6 +24,7 @@ class _MusuemViewState extends State<MusuemView> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+       
         body: SingleChildScrollView(
           child: Column(
             children: [
