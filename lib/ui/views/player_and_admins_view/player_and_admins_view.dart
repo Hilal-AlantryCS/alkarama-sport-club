@@ -98,7 +98,7 @@ class PlayerAndAdminsView extends StatelessWidget {
                     Container(
                       margin: EdgeInsets.only(
                           top: screenWidth(15), bottom: screenWidth(15)),
-                      height: screenWidth(1.8),
+                      height: screenWidth(1.6),
                       child: ListView.builder(
                         shrinkWrap: true,
                         itemCount: 4,
@@ -122,7 +122,7 @@ class PlayerAndAdminsView extends StatelessWidget {
                     Container(
                       margin: EdgeInsets.only(
                           top: screenWidth(15), bottom: screenWidth(15)),
-                      height: screenWidth(1.8),
+                      height: screenWidth(1.6),
                       child: ListView.builder(
                         shrinkWrap: true,
                         itemCount: 4,
@@ -146,7 +146,7 @@ class PlayerAndAdminsView extends StatelessWidget {
                     Container(
                       margin: EdgeInsets.only(
                           top: screenWidth(15), bottom: screenWidth(15)),
-                      height: screenWidth(1.8),
+                      height: screenWidth(1.6),
                       child: ListView.builder(
                         shrinkWrap: true,
                         itemCount: 4,
@@ -179,7 +179,7 @@ class PlayerAndAdminsView extends StatelessWidget {
                     Container(
                       margin: EdgeInsets.only(
                           top: screenWidth(15), bottom: screenWidth(15)),
-                      height: screenWidth(1.8),
+                      height: screenWidth(1.6),
                       child: ListView.builder(
                         shrinkWrap: true,
                         itemCount: 4,
@@ -212,7 +212,7 @@ class PlayerAndAdminsView extends StatelessWidget {
                     Container(
                       margin: EdgeInsets.only(
                           top: screenWidth(15), bottom: screenWidth(15)),
-                      height: screenWidth(1.8),
+                      height: screenWidth(1.6),
                       child: ListView.builder(
                         shrinkWrap: true,
                         itemCount: 4,
@@ -245,7 +245,7 @@ class PlayerAndAdminsView extends StatelessWidget {
                     Container(
                       margin: EdgeInsets.only(
                           top: screenWidth(15), bottom: screenWidth(15)),
-                      height: screenWidth(1.8),
+                      height: screenWidth(1.6),
                       child: ListView.builder(
                         shrinkWrap: true,
                         itemCount: 4,

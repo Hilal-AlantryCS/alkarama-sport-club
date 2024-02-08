@@ -36,7 +36,7 @@ class StaffDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: screenWidth(2.7),
+      width: screenWidth(2.1),
       height: screenWidth(1.7),
       child: Stack(
         children: [
@@ -51,7 +51,7 @@ class StaffDetails extends StatelessWidget {
                   : isPlayer
                       ? AppColors.blueColor
                       : null,
-              width: screenWidth(2.4),
+              width: screenWidth(2.1),
             ),
           ),
           Positioned(
@@ -68,7 +68,7 @@ class StaffDetails extends StatelessWidget {
                 Image.asset(
                   'assets/images/pngs/aa.png',
                   width: imageWidth ?? screenWidth(3.5),
-                  height: screenWidth(3),
+                  // height: screenWidth(3),
                 ),
                 CustomText(
                   text: name,
