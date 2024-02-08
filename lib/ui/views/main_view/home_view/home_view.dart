@@ -12,7 +12,6 @@ import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
 
@@ -21,63 +20,63 @@ class HomeView extends StatefulWidget {
 }
 
 class _HomeViewState extends State<HomeView> {
-  HomeController controller=Get.put(HomeController());
+  HomeController controller = Get.put(HomeController());
   @override
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-          appBar: TobContainer(text: 'نادي الكرامة الرياضي'),
-      body: Column(children: [
+      appBar: TobContainer(
+        text: 'نادي الكرامة الرياضي',
+      ),
+      body: ListView(children: [
         SizedBox(
           height: screenWidth(13),
         ),
         Obx(() {
           print(controller.currentIndex.value);
-            return CarouselSlider(
-              options: CarouselOptions(
-                enlargeCenterPage: true,
-                enableInfiniteScroll: true,
-                viewportFraction: 0.92,
-                autoPlay: true,
-                onPageChanged: (index, reason) {
-                  if(controller.currentIndex.value<2)
+          return CarouselSlider(
+            options: CarouselOptions(
+              enlargeCenterPage: true,
+              enableInfiniteScroll: true,
+              viewportFraction: 0.92,
+              autoPlay: true,
+              onPageChanged: (index, reason) {
+                if (controller.currentIndex.value < 2)
                   controller.currentIndex++;
-                  else 
-                  {
-                    controller.currentIndex.value=0;
-                  }
+                else {
+                  controller.currentIndex.value = 0;
+                }
+              },
+            ),
+            items: [
+              Builder(
+                builder: (BuildContext context) {
+                  return Container(
+                    width: screenWidth(1),
+                    child: CustomEventMatch(),
+                  );
                 },
               ),
-              items: [
-                Builder(
-                  builder: (BuildContext context) {
-                    return Container(
-                      width: screenWidth(1),
-                      child: CustomEventMatch(),
-                    );
-                  },
-                ),
-              ],
-            );
-          }),
-           SizedBox(
+            ],
+          );
+        }),
+        SizedBox(
           height: screenWidth(13),
         ),
-          Obx(() {
-            return DotsIndicator(
-              dotsCount: 3,
-              position:controller.currentIndex.value,
-              decorator: DotsDecorator(
-                // size: Size.square(9),
-                activeSize: Size(30, 9.0),
-                color: AppColors.blueColor,
-                activeShape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(5)
-                ),
-                activeColor: AppColors.orangeColor,
-              ),
-            );
-          }),
+        Obx(() {
+          return DotsIndicator(
+            dotsCount: 3,
+            position: controller.currentIndex.value,
+            decorator: DotsDecorator(
+              // size: Size.square(9),
+              activeSize: Size(30, 9.0),
+              color: AppColors.blueColor,
+              activeShape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(5)),
+              activeColor: AppColors.orangeColor,
+            ),
+          );
+        }),
         SizedBox(
           height: screenWidth(13),
         ),
@@ -92,7 +91,7 @@ class _HomeViewState extends State<HomeView> {
             Padding(
                 padding: EdgeInsetsDirectional.only(end: screenWidth(20)),
                 child: InkWell(
-                  onTap: (){
+                  onTap: () {
                     Get.to(NewsView());
                   },
                   child: CustomText(
@@ -110,11 +109,11 @@ class _HomeViewState extends State<HomeView> {
           height: screenWidth(3),
           child: ListView.builder(
               scrollDirection: Axis.horizontal,
-              itemCount: 3,            
+              itemCount: 3,
               itemBuilder: (context, index) {
                 return CustomLatestNews(
-                  marginstart:screenWidth(2000),marginbottom:screenWidth(2000)
-                  );
+                    marginstart: screenWidth(2000),
+                    marginbottom: screenWidth(2000));
               }),
         ),
       ]),
