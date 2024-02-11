@@ -4,7 +4,10 @@ import 'package:alkarama_sport_club/ui/shared/custom%20_widgets/custom_text.dart
 import 'package:alkarama_sport_club/ui/shared/shared_widgets/custom_tob_container.dart';
 import 'package:alkarama_sport_club/ui/shared/shared_widgets/custom_upcoming_matches.dart';
 import 'package:alkarama_sport_club/ui/shared/utlis.dart';
+import 'package:alkarama_sport_club/ui/views/match_details/match_details_plan_view/match_details_plan_view.dart';
+import 'package:alkarama_sport_club/ui/views/match_details/match_details_view.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class MatchesView extends StatefulWidget {
   const MatchesView({super.key});
@@ -32,7 +35,9 @@ class _MatchesViewState extends State<MatchesView> {
             Container(
               margin: EdgeInsets.symmetric(horizontal: screenWidth(3.5)),
               child: InkWell(
-                onTap: () {},
+                onTap: () {
+                  Get.to(MatchDetails());
+                },
                 child: Container(
                     margin: EdgeInsets.only(bottom: screenWidth(30)),
                     height: screenWidth(10),

@@ -19,8 +19,8 @@ class MyContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: screenWidth(1.8),
-      height: screenWidth(1.3),
+      width: screenWidth(2),
+      height: screenWidth(1.5),
       decoration: BoxDecoration(
           color: AppColors.whiteColor,
           border: Border.all(color: AppColors.blueColor, width: 2),

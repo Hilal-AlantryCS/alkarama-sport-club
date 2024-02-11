@@ -14,11 +14,11 @@ class ClupNicknames extends StatelessWidget {
           children: [
             Image.asset(
               'assets/images/pngs/container1_nicknames.png',
-              width: screenWidth(2.3),
+              width: screenWidth(2.8),
             ),
             Image.asset(
               'assets/images/pngs/cntainer2_nicknames.png',
-              width: screenWidth(2),
+              width: screenWidth(2.2),
             )
           ],
         ),
@@ -27,12 +27,12 @@ class ClupNicknames extends StatelessWidget {
               top: screenWidth(35), start: screenWidth(20)),
           child: Image.asset(
             'assets/images/pngs/champions_img.png',
-            width: screenWidth(2.5),
+            width: screenWidth(3),
           ),
         ),
-        Padding(
-          padding: EdgeInsetsDirectional.only(
-              top: screenWidth(2.15), start: screenWidth(13)),
+        Positioned(
+          bottom: screenWidth(6.5),
+          left: screenWidth(15),
           child: Column(
             children: [
               CustomText(

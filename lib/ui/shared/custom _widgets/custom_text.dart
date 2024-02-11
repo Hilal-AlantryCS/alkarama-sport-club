@@ -13,6 +13,7 @@ class CustomText extends StatelessWidget {
   final FontWeight? fontWeight;
   final double? fontSize;
   final TextOverflow? overflow;
+  final int? lineNum;
 
   const CustomText({
     super.key,
@@ -23,11 +24,14 @@ class CustomText extends StatelessWidget {
     this.fontSize,
     this.alignText,
     this.overflow,
+    this.lineNum,
   });
 
   @override
   Widget build(BuildContext context) {
     return Text(
+      overflow: overflow,
+      maxLines: lineNum,
       text,
       style: getStyle(Get.size),
       textAlign: alignText,
