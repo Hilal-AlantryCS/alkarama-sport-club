@@ -3,9 +3,6 @@ import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:get/get.dart';
-import 'package:alkarama_sport_club/core/data/repository/auth_repository.dart';
-
-import 'package:alkarama_sport_club/core/services/location_service.dart';
 import '../../core/data/repository/shared_prefrence_repository.dart';
 import '../../core/services/connectivity_service.dart';
 import 'colors.dart';
@@ -23,19 +20,6 @@ void customLoader() => BotToast.showCustomLoading(toastBuilder: (context) {
         ),
       );
     });
-
-bool isEmailValid(String email) {
-  return RegExp(
-          r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
-      .hasMatch(email);
-}
-
-bool isComplexPassword(String password) {
-  RegExp regex = RegExp(
-    r'^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$&*~]).{8,}$',
-  );
-  return regex.hasMatch(password);
-}
 
 double screenWidth(double percent) {
   BuildContext context = Get.context!;
@@ -71,8 +55,6 @@ void changeLanguage(String code) {
 
 SharedPrefrenceRepository get storage => Get.find<SharedPrefrenceRepository>();
 ConnectivitySerivce get connectivitySerivce => Get.find<ConnectivitySerivce>();
-LocationService get locationService => Get.find<LocationService>();
 Connectivity get connectivity => Get.find<Connectivity>();
 
-AuthRepository get authRepository => Get.find<AuthRepository>();
 bool isOnline = true;
