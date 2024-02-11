@@ -1,6 +1,7 @@
 import 'package:alkarama_sport_club/ui/shared/shared_widgets/custom_tob_container.dart';
 import 'package:alkarama_sport_club/ui/shared/utlis.dart';
 import 'package:alkarama_sport_club/ui/views/sccore_table_view/sccore_table_view.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -119,57 +120,62 @@ class SccoreView extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
-              margin: EdgeInsetsDirectional.all(screenWidth(20)),
-              child: Stack(
-                children: [
-                  Image.asset(
-                    "assets/images/pngs/ic_bg.png",
-                  ),
-                  Align(
-                    alignment: Alignment.center,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Column(
-                          children: [
-                            Image.asset(
-                              "assets/images/pngs/ic_gabla.png",
-                              width: screenWidth(8),
-                              height: screenWidth(8),
-                            ),
-                            Text("صاحب ثالث هدف"),
-                            Text("جبلة"),
-                          ],
-                        ),
-                        Column(
+            CarouselSlider(
+              options: CarouselOptions(),
+              items: [
+                Container(
+                  margin: EdgeInsetsDirectional.all(screenWidth(20)),
+                  child: Stack(
+                    children: [
+                      Image.asset(
+                        "assets/images/pngs/ic_bg.png",
+                      ),
+                      Align(
+                        alignment: Alignment.center,
+                        child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Text("الجمعة,2023/05/26"),
-                            Text("عصراً 12:12"),
-                            Text("ملعب خالد بن الوليد"),
-                            Text("0:1"),
-                            Text("الجولة"),
-                            Text("23"),
-                          ],
-                        ),
-                        Column(
-                          children: [
-                            Image.asset(
-                              "assets/images/pngs/ic_karama.png",
-                              width: screenWidth(8),
-                              height: screenWidth(8),
+                            Column(
+                              children: [
+                                Image.asset(
+                                  "assets/images/pngs/ic_gabla.png",
+                                  width: screenWidth(8),
+                                  height: screenWidth(8),
+                                ),
+                                Text("صاحب ثالث هدف"),
+                                Text("جبلة"),
+                              ],
                             ),
-                            Text("الكرامة"),
-                            Text("صاحب أول هدف"),
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text("الجمعة,2023/05/26"),
+                                Text("عصراً 12:12"),
+                                Text("ملعب خالد بن الوليد"),
+                                Text("0:1"),
+                                Text("الجولة"),
+                                Text("23"),
+                              ],
+                            ),
+                            Column(
+                              children: [
+                                Image.asset(
+                                  "assets/images/pngs/ic_karama.png",
+                                  width: screenWidth(8),
+                                  height: screenWidth(8),
+                                ),
+                                Text("الكرامة"),
+                                Text("صاحب أول هدف"),
+                              ],
+                            ),
                           ],
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
             Container(
               height: screenWidth(1.5),
@@ -286,7 +292,7 @@ class SccoreView extends StatelessWidget {
                         Get.to(SccoreTableView());
                       },
                       child: Container(
-                        width: screenWidth(3),
+                        width: screenWidth(2),
                         height: screenWidth(13),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadiusDirectional.circular(50),
@@ -301,7 +307,7 @@ class SccoreView extends StatelessWidget {
                         ),
                       ),
                     ),
-                  )
+                  ),
                 ],
               ),
             ),

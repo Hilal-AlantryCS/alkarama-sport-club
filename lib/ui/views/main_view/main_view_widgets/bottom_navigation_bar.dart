@@ -10,8 +10,11 @@ import '../../../../core/enums/bottom_navigation_enum.dart';
 class CustomBottmNavigation extends StatefulWidget {
   final BottomNavigationEnum selectedView;
   final Function(BottomNavigationEnum, int) onTap;
-  const CustomBottmNavigation(
-      {super.key, required this.selectedView, required this.onTap});
+  const CustomBottmNavigation({
+    super.key,
+    required this.selectedView,
+    required this.onTap,
+  });
 
   @override
   State<CustomBottmNavigation> createState() => _CustomBottmNavigationState();
@@ -58,15 +61,6 @@ class _CustomBottmNavigationState extends State<CustomBottmNavigation> {
                     title: "النتائج",
                   ),
                   SizedBox(width: screenWidth(7)),
-                  // NavItem(
-                  //   onTap: () {
-                  //     widget.onTap(BottomNavigationEnum.MATCHES, 2);
-                  //   },
-                  //   icon: "assets/images/pngs/rectangle.png",
-                  //   isSelected:
-                  //       widget.selectedView == BottomNavigationEnum.MATCHES,
-                  //   title: tr("matches_key"),
-                  // ),
                   NavItem(
                     onTap: () {
                       widget.onTap(BottomNavigationEnum.ABOUT, 3);
@@ -84,39 +78,6 @@ class _CustomBottmNavigationState extends State<CustomBottmNavigation> {
                     isSelected:
                         widget.selectedView == BottomNavigationEnum.MUSEUM,
                     title: "المتحف",
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Align(
-            alignment: AlignmentDirectional.bottomCenter,
-            child: InkWell(
-              onTap: () {
-                widget.onTap(BottomNavigationEnum.MATCHES, 2);
-              },
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Container(
-                    width: screenWidth(5),
-                    height: screenWidth(5),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(100),
-                      color: AppColors.blueColor,
-                    ),
-                    child: Center(
-                      child: Image.asset(
-                        "assets/images/pngs/rectangle.png",
-                        width: screenWidth(7),
-                        height: screenWidth(7),
-                      ),
-                    ),
-                  ),
-                  CustomText(
-                    text: "المباريات",
-                    styleType: TextStyleType.SUBTITLE,
-                    textColor:  AppColors.whiteColor,
                   ),
                 ],
               ),

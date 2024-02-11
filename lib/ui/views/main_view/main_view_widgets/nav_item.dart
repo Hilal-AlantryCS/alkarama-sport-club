@@ -40,7 +40,7 @@ class NavItem extends StatelessWidget {
               color: isSelected ? AppColors.orangeColor : AppColors.whiteColor),
           CustomText(
             text: title,
-            styleType: TextStyleType.SUBTITLE,
+            styleType: TextStyleType.BODY,
             textColor:
                 isSelected ? AppColors.orangeColor : AppColors.whiteColor,
           )

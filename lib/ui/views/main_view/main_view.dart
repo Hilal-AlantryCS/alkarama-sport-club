@@ -1,3 +1,8 @@
+import 'package:alkarama_sport_club/core/enums/bottom_navigation_enum.dart';
+import 'package:alkarama_sport_club/core/enums/text_style_type.dart';
+import 'package:alkarama_sport_club/ui/shared/colors.dart';
+import 'package:alkarama_sport_club/ui/shared/custom%20_widgets/custom_text.dart';
+import 'package:alkarama_sport_club/ui/shared/utlis.dart';
 import 'package:alkarama_sport_club/ui/views/main_view/home_view/home_view.dart';
 import 'package:alkarama_sport_club/ui/views/main_view/maches_view/matches_view.dart';
 import 'package:alkarama_sport_club/ui/views/main_view/main_controller.dart';
@@ -22,43 +27,91 @@ class _MainViewState extends State<MainView> {
   Widget build(BuildContext context) {
     return SafeArea(child: Obx(() {
       return Scaffold(
-        bottomNavigationBar: CustomBottmNavigation(
-          onTap: (selectedView, index) {
-            controller.selecte.value = selectedView;
+        body: Container(
+          height: screenHeight(1),
+          child: Stack(
+            children: [
+              Container(
+                height: screenHeight(1) - screenWidth(3),
+                child: PageView(
+                  physics: NeverScrollableScrollPhysics(),
+                  controller: controller.pageController,
+                  children: [
+                    HomeView(),
+                    SccoreView(),
+                    MatchesView(),
+                    PlayerAndAdminsView(),
+                    MusuemView(),
+                  ],
+                  // onPageChanged: ((index) {
+                  //   if (index == 0)
+                  //     setState(() {
+                  //       selecte = BottomNavigationEnum.HOME;
+                  //     });
+                  //   if (index == 1)
+                  //     setState(() {
+                  //       selecte = BottomNavigationEnum.FAVORITE;
+                  //     });
+                  //   if (index == 2)
+                  //     setState(() {
+                  //       selecte = BottomNavigationEnum.NOTIFICATIONS;
+                  //     });
+                  //   if (index == 3)
+                  //     setState(() {
+                  //       selecte = BottomNavigationEnum.SETTINGS;
+                  //     });
+                  // }),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional.bottomStart,
+                child: CustomBottmNavigation(
+                  onTap: (selectedView, index) {
+                    controller.selecte.value = selectedView;
 
-            controller.pageController.jumpToPage(index);
-            //! here notify onTap in navitem
-          },
-          selectedView: controller.selecte.value,
-        ),
-        body: PageView(
-          physics: NeverScrollableScrollPhysics(),
-          controller: controller.pageController,
-          children: [
-            HomeView(),
-            SccoreView(),
-            MatchesView(),
-            PlayerAndAdminsView(),
-            MusuemView(),
-          ],
-          // onPageChanged: ((index) {
-          //   if (index == 0)
-          //     setState(() {
-          //       selecte = BottomNavigationEnum.HOME;
-          //     });
-          //   if (index == 1)
-          //     setState(() {
-          //       selecte = BottomNavigationEnum.FAVORITE;
-          //     });
-          //   if (index == 2)
-          //     setState(() {
-          //       selecte = BottomNavigationEnum.NOTIFICATIONS;
-          //     });
-          //   if (index == 3)
-          //     setState(() {
-          //       selecte = BottomNavigationEnum.SETTINGS;
-          //     });
-          // }),
+                    controller.pageController.jumpToPage(index);
+                    //! here notify onTap in navitem
+                  },
+                  selectedView: controller.selecte.value,
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional.bottomCenter,
+                child: InkWell(
+                  onTap: () {
+                    controller.selecte.value = BottomNavigationEnum.MATCHES;
+
+                    controller.pageController.jumpToPage(2);
+                  },
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Container(
+                        width: screenWidth(5),
+                        height: screenWidth(5),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                          color: AppColors.blueColor,
+                        ),
+                        child: Center(
+                          child: Image.asset(
+                            "assets/images/pngs/rectangle.png",
+                            width: screenWidth(7),
+                            height: screenWidth(7),
+                          ),
+                        ),
+                      ),
+                      CustomText(
+                        text: "المباريات",
+                        styleType: TextStyleType.BODY,
+                        textColor: AppColors.whiteColor,
+                      ),
+                    ],
+                  ),
+                ),
+              )
+            ],
+          ),
         ),
       );
     }));

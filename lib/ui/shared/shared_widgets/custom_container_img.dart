@@ -14,8 +14,9 @@ class CustomContainerImg extends StatelessWidget {
         width: screenWidth(1.34),
         height: screenWidth(2),
         decoration: BoxDecoration(
-            color: AppColors.blueColor,
-            borderRadius: BorderRadius.circular(22)),
+          color: AppColors.blueColor,
+          borderRadius: BorderRadius.circular(22),
+        ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -23,13 +24,13 @@ class CustomContainerImg extends StatelessWidget {
               'assets/images/pngs/alkarama.png',
             ),
             Padding(
-              padding:EdgeInsetsDirectional.only(top: screenWidth(40),start: screenWidth(40)),
+              padding: EdgeInsetsDirectional.only(
+                  top: screenWidth(40), start: screenWidth(40)),
               child: CustomText(
-                text: 'متى تأسس نادي الكرامة ',
-                styleType:TextStyleType.SUBTITLE,
-                textColor: AppColors.whiteColor,
-                fontWeight:FontWeight.w400
-              ),
+                  text: 'متى تأسس نادي الكرامة ',
+                  styleType: TextStyleType.SUBTITLE,
+                  textColor: AppColors.whiteColor,
+                  fontWeight: FontWeight.w400),
             )
           ],
         ));
