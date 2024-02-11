@@ -4,7 +4,6 @@ import 'package:alkarama_sport_club/ui/shared/custom%20_widgets/custom_text.dart
 import 'package:alkarama_sport_club/ui/shared/shared_widgets/custom_tob_container.dart';
 import 'package:alkarama_sport_club/ui/shared/shared_widgets/custom_upcoming_matches.dart';
 import 'package:alkarama_sport_club/ui/shared/utlis.dart';
-import 'package:alkarama_sport_club/ui/views/match_details/match_details_plan_view/match_details_plan_view.dart';
 import 'package:alkarama_sport_club/ui/views/match_details/match_details_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
