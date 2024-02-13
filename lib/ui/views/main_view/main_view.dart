@@ -77,16 +77,16 @@ class _MainViewState extends State<MainView> {
               ),
               Align(
                 alignment: AlignmentDirectional.bottomCenter,
-                child: InkWell(
-                  onTap: () {
-                    controller.selecte.value = BottomNavigationEnum.MATCHES;
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    InkWell(
+                      onTap: () {
+                        controller.selecte.value = BottomNavigationEnum.MATCHES;
 
-                    controller.pageController.jumpToPage(2);
-                  },
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      Container(
+                        controller.pageController.jumpToPage(2);
+                      },
+                      child: Container(
                         width: screenWidth(5),
                         height: screenWidth(5),
                         decoration: BoxDecoration(
@@ -101,13 +101,20 @@ class _MainViewState extends State<MainView> {
                           ),
                         ),
                       ),
-                      CustomText(
+                    ),
+                    InkWell(
+                      onTap: () {
+                        controller.selecte.value = BottomNavigationEnum.MATCHES;
+
+                        controller.pageController.jumpToPage(2);
+                      },
+                      child: CustomText(
                         text: "المباريات",
                         styleType: TextStyleType.BODY,
                         textColor: AppColors.whiteColor,
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               )
             ],
