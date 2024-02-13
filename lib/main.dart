@@ -1,5 +1,3 @@
-import 'package:alkarama_sport_club/core/data/repository/auth_repository.dart';
-import 'package:alkarama_sport_club/core/services/location_service.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -7,7 +5,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'app/my_app.dart';
 import 'core/data/repository/shared_prefrence_repository.dart';
 import 'core/services/connectivity_service.dart';
-
 
 // late SharedPreferences prefs;
 Future main() async {
@@ -25,12 +22,8 @@ Future main() async {
   );
 
   Get.put(ConnectivitySerivce());
-  Get.put(LocationService());
-  Get.put(Connectivity());
 
-  Get.lazyPut(
-    () => AuthRepository(),
-  );
+  Get.put(Connectivity());
 
   // try {
   //   await Firebase.initializeApp(

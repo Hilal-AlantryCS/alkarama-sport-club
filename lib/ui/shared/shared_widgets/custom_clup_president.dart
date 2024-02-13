@@ -11,22 +11,25 @@ class ClupPresident extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Image.asset(
-          'assets/images/pngs/president_clup_img.png',
-          width: screenWidth(1.5),
-          height: screenWidth(1.5),
+        Positioned(
+          bottom: 0,
+          child: Image.asset(
+            'assets/images/pngs/president_clup_img.png',
+            width: screenWidth(1.7),
+            height: screenWidth(2),
+          ),
         ),
         Padding(
           padding: EdgeInsetsDirectional.only(top: screenWidth(2.4)),
           child: Image.asset(
             'assets/images/pngs/president_clup.png',
-            width: screenWidth(1.5),
+            width: screenWidth(1.7),
             height: screenWidth(1.5),
           ),
         ),
         Padding(
           padding: EdgeInsetsDirectional.only(
-              top: screenWidth(2.38), start: screenWidth(4.3)),
+              top: screenWidth(2.45), start: screenWidth(4.8)),
           child: Column(
             children: [
               CustomText(

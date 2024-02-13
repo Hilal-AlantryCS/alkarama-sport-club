@@ -17,8 +17,8 @@ class Individual_Awards extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        width: screenWidth(2.4),
-        height: screenWidth(1.4),
+        width: screenWidth(2.6),
+        height: screenWidth(1.5),
         decoration: BoxDecoration(
             color: AppColors.blueColor,
             borderRadius: BorderRadius.circular(35)),

@@ -286,21 +286,12 @@ class _MusuemViewState extends State<MusuemView> {
                 widthtwo: screenWidth(17),
                 widththree: screenWidth(11),
               ),
-              SizedBox(
-                height: screenWidth(15),
-              ),
-              SizedBox(
-                height: screenWidth(1.5),
+              Container(
+                height: screenWidth(1.6),
                 child: ListView(
                   shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
-                  children: [
-                    ClupPresident(),
-                    SizedBox(
-                      width: screenWidth(25),
-                    ),
-                    ClupPresident()
-                  ],
+                  children: [ClupPresident(), ClupPresident()],
                 ),
               ),
               SizedBox(

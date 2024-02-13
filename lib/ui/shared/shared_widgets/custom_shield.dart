@@ -10,31 +10,66 @@ class CustomShield extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Image.asset(
-          'assets/images/pngs/shield.png',
-          width: screenWidth(14),
-        ),
-        Container(
-            width: screenWidth(14),
-            child: Column(
-              children: [
-                CustomText(
-                  text: upTxt,
-                  fontSize: 8,
-                  fontWeight: FontWeight.w900,
-                  styleType: TextStyleType.CUSTOM,
-                ),
-                CustomText(
-                  text: downTxt,
-                  fontSize: 8,
-                  fontWeight: FontWeight.bold,
-                  styleType: TextStyleType.CUSTOM,
-                ),
-              ],
-            ))
-      ],
+    return Container(
+      width: screenWidth(10),
+      height: screenWidth(10),
+      decoration: BoxDecoration(
+          image: DecorationImage(
+              fit: BoxFit.fill,
+              image: AssetImage(
+                "assets/images/pngs/shield.png",
+              ))),
+      child: Stack(
+        children: [
+          Center(
+              child: Container(
+                  height: screenWidth(9),
+                  width: screenWidth(12),
+                  child: Column(
+                    children: [
+                      CustomText(
+                        text: upTxt,
+                        fontSize: screenWidth(40),
+                        fontWeight: FontWeight.w900,
+                        styleType: TextStyleType.CUSTOM,
+                      ),
+                      CustomText(
+                        text: downTxt,
+                        fontSize: screenWidth(40),
+                        fontWeight: FontWeight.bold,
+                        styleType: TextStyleType.CUSTOM,
+                      ),
+                    ],
+                  )))
+        ],
+      ),
     );
+
+    //   Stack(
+    //   children: [
+    //     Image.asset(
+    //       'assets/images/pngs/shield.png',
+    //       width: screenWidth(11),
+    //     ),
+    //     Container(
+    //         width: screenWidth(12),
+    //         child: Column(
+    //           children: [
+    //             CustomText(
+    //               text: upTxt,
+    //               fontSize: screenWidth(40),
+    //               fontWeight: FontWeight.w900,
+    //               styleType: TextStyleType.CUSTOM,
+    //             ),
+    //             CustomText(
+    //               text: downTxt,
+    //               fontSize: screenWidth(40),
+    //               fontWeight: FontWeight.bold,
+    //               styleType: TextStyleType.CUSTOM,
+    //             ),
+    //           ],
+    //         ))
+    //   ],
+    // );
   }
 }

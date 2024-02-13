@@ -16,16 +16,15 @@ class CustomContainerVideo1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         padding: EdgeInsets.all(screenWidth(40)),
-        width: screenWidth(1),
-        height: screenWidth(3.6),
+        width: screenWidth(1.1),
+        height: screenWidth(3.8),
         decoration: BoxDecoration(
             color: color, borderRadius: BorderRadius.circular(20)),
         child: Stack(
           children: [
             CustomImg1(
               name: 'score_img',
-              width: screenWidth(2.4),
-              height: screenWidth(2.4),
+              width: screenWidth(2.7),
             ),
             Positioned(
               top: screenWidth(20),
@@ -37,15 +36,19 @@ class CustomContainerVideo1 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: screenWidth(30),
-              right: screenWidth(2.3),
-              child: CustomText(
-                text: text,
-                styleType: TextStyleType.SUBTITLE,
-                textColor: AppColors.whiteColor,
-                fontWeight: FontWeight.w300,
-              ),
-            )
+                top: screenWidth(30),
+                right: screenWidth(2.3),
+                child: Container(
+                  height: screenWidth(3.8),
+                  width: screenWidth(2.3),
+                  child: CustomText(
+                    lineNum: 2,
+                    text: text,
+                    styleType: TextStyleType.SUBTITLE,
+                    textColor: AppColors.whiteColor,
+                    fontWeight: FontWeight.w300,
+                  ),
+                ))
           ],
         ));
   }

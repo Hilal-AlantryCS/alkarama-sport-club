@@ -1,6 +1,4 @@
-import 'package:alkarama_sport_club/core/enums/text_style_type.dart';
 import 'package:alkarama_sport_club/ui/shared/colors.dart';
-import 'package:alkarama_sport_club/ui/shared/custom%20_widgets/custom_text.dart';
 import 'package:alkarama_sport_club/ui/shared/utlis.dart';
 import 'package:alkarama_sport_club/ui/views/main_view/main_view_widgets/nav_item.dart';
 import 'package:flutter/material.dart';
