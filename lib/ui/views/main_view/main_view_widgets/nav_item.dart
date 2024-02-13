@@ -23,6 +23,7 @@ class NavItem extends StatelessWidget {
     return InkWell(
       onTap: () {
         onTap();
+        
       },
       child: Column(
         children: [

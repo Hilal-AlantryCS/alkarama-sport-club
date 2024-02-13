@@ -7,5 +7,6 @@ class MainController extends GetxController {
   PageController pageController = PageController(
     initialPage: 0,
   );
+  RxInt index = 0.obs;
   Rx<BottomNavigationEnum> selecte = BottomNavigationEnum.HOME.obs;
 }

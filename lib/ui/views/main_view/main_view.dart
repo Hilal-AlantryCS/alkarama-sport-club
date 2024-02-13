@@ -43,24 +43,6 @@ class _MainViewState extends State<MainView> {
                     PlayerAndAdminsView(),
                     MusuemView(),
                   ],
-                  // onPageChanged: ((index) {
-                  //   if (index == 0)
-                  //     setState(() {
-                  //       selecte = BottomNavigationEnum.HOME;
-                  //     });
-                  //   if (index == 1)
-                  //     setState(() {
-                  //       selecte = BottomNavigationEnum.FAVORITE;
-                  //     });
-                  //   if (index == 2)
-                  //     setState(() {
-                  //       selecte = BottomNavigationEnum.NOTIFICATIONS;
-                  //     });
-                  //   if (index == 3)
-                  //     setState(() {
-                  //       selecte = BottomNavigationEnum.SETTINGS;
-                  //     });
-                  // }),
                 ),
               ),
               Align(
@@ -70,6 +52,7 @@ class _MainViewState extends State<MainView> {
                     controller.selecte.value = selectedView;
 
                     controller.pageController.jumpToPage(index);
+                    controller.index.value = 0;
                     //! here notify onTap in navitem
                   },
                   selectedView: controller.selecte.value,
@@ -83,7 +66,7 @@ class _MainViewState extends State<MainView> {
                     InkWell(
                       onTap: () {
                         controller.selecte.value = BottomNavigationEnum.MATCHES;
-
+                        controller.index.value = 2;
                         controller.pageController.jumpToPage(2);
                       },
                       child: Container(
@@ -105,13 +88,15 @@ class _MainViewState extends State<MainView> {
                     InkWell(
                       onTap: () {
                         controller.selecte.value = BottomNavigationEnum.MATCHES;
-
+                        controller.index.value = 2;
                         controller.pageController.jumpToPage(2);
                       },
                       child: CustomText(
                         text: "المباريات",
                         styleType: TextStyleType.BODY,
-                        textColor: AppColors.whiteColor,
+                        textColor: controller.index.value == 2
+                            ? AppColors.orangeColor
+                            : AppColors.whiteColor,
                       ),
                     ),
                   ],
