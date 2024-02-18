@@ -1,7 +1,12 @@
+import 'package:alkarama_sport_club/core/enums/text_style_type.dart';
+import 'package:alkarama_sport_club/ui/shared/colors.dart';
+import 'package:alkarama_sport_club/ui/shared/custom%20_widgets/custom_text.dart';
+import 'package:alkarama_sport_club/ui/shared/shared_widgets/custom_sccore_match.dart';
 import 'package:alkarama_sport_club/ui/shared/shared_widgets/custom_tob_container.dart';
 import 'package:alkarama_sport_club/ui/shared/utlis.dart';
 import 'package:alkarama_sport_club/ui/views/sccore_table_view/sccore_table_view.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -40,19 +45,15 @@ class SccoreView extends StatelessWidget {
                 children: [
                   Column(
                     children: [
-                      Text(
-                        "السبت",
-                        style: TextStyle(
-                          fontSize: screenWidth(24),
-                          color: Colors.black,
-                        ),
+                      CustomText(
+                        text: "السبت",
+                        styleType: TextStyleType.SMALL,
+                        textColor: Colors.black,
                       ),
-                      Text(
-                        "17 نوفمبر",
-                        style: TextStyle(
-                          fontSize: screenWidth(24),
-                          color: Colors.black,
-                        ),
+                      CustomText(
+                        text: "3 نوفمبر",
+                        styleType: TextStyleType.SMALL,
+                        textColor: Colors.black,
                       ),
                     ],
                   ),
@@ -77,38 +78,30 @@ class SccoreView extends StatelessWidget {
                     alignment: Alignment.topCenter,
                     child: Column(
                       children: [
-                        Text(
-                          "السبت",
-                          style: TextStyle(
-                            fontSize: screenWidth(24),
-                            color: Colors.black,
-                          ),
+                        CustomText(
+                          text: "السبت",
+                          styleType: TextStyleType.SMALL,
+                          textColor: Colors.black,
                         ),
-                        Text(
-                          "10 نوفمبر",
-                          style: TextStyle(
-                            fontSize: screenWidth(24),
-                            color: Colors.black,
-                          ),
+                        CustomText(
+                          text: "3 نوفمبر",
+                          styleType: TextStyleType.SMALL,
+                          textColor: Colors.black,
                         ),
                       ],
                     ),
                   ),
                   Column(
                     children: [
-                      Text(
-                        "السبت",
-                        style: TextStyle(
-                          fontSize: screenWidth(24),
-                          color: Colors.black,
-                        ),
+                      CustomText(
+                        text: "السبت",
+                        styleType: TextStyleType.SMALL,
+                        textColor: Colors.black,
                       ),
-                      Text(
-                        "3 نوفمبر",
-                        style: TextStyle(
-                          fontSize: screenWidth(24),
-                          color: Colors.black,
-                        ),
+                      CustomText(
+                        text: "3 نوفمبر",
+                        styleType: TextStyleType.SMALL,
+                        textColor: Colors.black,
                       ),
                     ],
                   ),
@@ -121,61 +114,41 @@ class SccoreView extends StatelessWidget {
               ),
             ),
             CarouselSlider(
-              options: CarouselOptions(),
+              options: CarouselOptions(
+                enlargeCenterPage: true,
+                enableInfiniteScroll: true,
+                viewportFraction: 0.92,
+                autoPlay: true,
+                onPageChanged: (index, reason) {},
+              ),
               items: [
-                Container(
-                  margin: EdgeInsetsDirectional.all(screenWidth(20)),
-                  child: Stack(
-                    children: [
-                      Image.asset(
-                        "assets/images/pngs/ic_bg.png",
-                      ),
-                      Align(
-                        alignment: Alignment.center,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Column(
-                              children: [
-                                Image.asset(
-                                  "assets/images/pngs/ic_gabla.png",
-                                  width: screenWidth(8),
-                                  height: screenWidth(8),
-                                ),
-                                Text("صاحب ثالث هدف"),
-                                Text("جبلة"),
-                              ],
-                            ),
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Text("الجمعة,2023/05/26"),
-                                Text("عصراً 12:12"),
-                                Text("ملعب خالد بن الوليد"),
-                                Text("0:1"),
-                                Text("الجولة"),
-                                Text("23"),
-                              ],
-                            ),
-                            Column(
-                              children: [
-                                Image.asset(
-                                  "assets/images/pngs/ic_karama.png",
-                                  width: screenWidth(8),
-                                  height: screenWidth(8),
-                                ),
-                                Text("الكرامة"),
-                                Text("صاحب أول هدف"),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
+                CustomSccoreMatch(
+                  date: "الجمعة,2023/05/26",
+                  round: "23",
+                  stadium: "ملعب خالد بن الوليد",
+                  time: "عصراً 12:12",
+                  leftTeam: "جبلة",
+                  leftTeamGoalDescription: "صاحب ثالث هدف",
+                  leftTeamImg: "assets/images/pngs/ic_gabla.png",
+                  leftTeamGoal: '0',
+                  rightTeam: "الكرامة",
+                  rightTeamGoal: '1',
+                  rightTeamGoalDescription: "صاحب أول هدف",
+                  rightTeamImg: "assets/images/pngs/ic_karama.png",
                 ),
               ],
+            ),
+            DotsIndicator(
+              dotsCount: 3,
+              position: 2,
+              decorator: DotsDecorator(
+                // size: Size.square(9),
+                activeSize: Size(30, 9.0),
+                color: AppColors.blueColor,
+                activeShape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(5)),
+                activeColor: AppColors.orangeColor,
+              ),
             ),
             Container(
               height: screenWidth(1.5),
@@ -207,18 +180,22 @@ class SccoreView extends StatelessWidget {
                       children: [
                         TableRow(
                           children: [
-                            Text("ترتيب"),
+                            CustomText(
+                              text: "ترتيب",
+                              styleType: TextStyleType.SMALL,
+                            ),
                             Container(
                               width: screenWidth(10),
-                              child: Text(
-                                "الفريق",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  // fontSize: screenWidth(30),
-                                ),
+                              child: CustomText(
+                                text: "الفريق",
+                                fontWeight: FontWeight.bold,
+                                styleType: TextStyleType.SMALL,
                               ),
                             ),
-                            Text("لعب"),
+                            CustomText(
+                              text: "لعب",
+                              styleType: TextStyleType.SMALL,
+                            ),
                             Container(
                               decoration: BoxDecoration(
                                   border: Border(
@@ -227,7 +204,10 @@ class SccoreView extends StatelessWidget {
                                   width: 3,
                                 ),
                               )),
-                              child: Text("فاز"),
+                              child: CustomText(
+                                text: "فاز",
+                                styleType: TextStyleType.SMALL,
+                              ),
                             ),
                             Container(
                               decoration: BoxDecoration(
@@ -237,7 +217,10 @@ class SccoreView extends StatelessWidget {
                                   width: 3,
                                 ),
                               )),
-                              child: Text("تعادل"),
+                              child: CustomText(
+                                text: "تعادل",
+                                styleType: TextStyleType.SMALL,
+                              ),
                             ),
                             Container(
                               decoration: BoxDecoration(
@@ -247,9 +230,15 @@ class SccoreView extends StatelessWidget {
                                   width: 3,
                                 ),
                               )),
-                              child: Text("خسر"),
+                              child: CustomText(
+                                text: "خسر",
+                                styleType: TextStyleType.SMALL,
+                              ),
                             ),
-                            Text("نقاط"),
+                            CustomText(
+                              text: "نقاط",
+                              styleType: TextStyleType.SMALL,
+                            ),
                           ],
                         ),
                         tableRow(
@@ -275,13 +264,12 @@ class SccoreView extends StatelessWidget {
                       padding: EdgeInsetsDirectional.only(
                         top: screenWidth(20),
                       ),
-                      child: Text(
-                        "جدول ترتيب فرق الدوري السوري2023/2024",
-                        style: TextStyle(
-                          fontSize: screenWidth(23.5),
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        ),
+                      child: CustomText(
+                        text: "جدول ترتيب فرق الدوري السوري2023/2024",
+                        styleType: TextStyleType.SMALL,
+                        fontSize: screenWidth(23.5),
+                        fontWeight: FontWeight.bold,
+                        textColor: Colors.white,
                       ),
                     ),
                   ),
@@ -299,11 +287,10 @@ class SccoreView extends StatelessWidget {
                           color: Colors.orangeAccent,
                         ),
                         alignment: Alignment.center,
-                        child: Text(
-                          "مشاهدة كامل الجدول",
-                          style: TextStyle(
-                            color: Colors.white,
-                          ),
+                        child: CustomText(
+                          text: "مشاهدة كامل الجدول",
+                          styleType: TextStyleType.SMALL,
+                          textColor: Colors.white,
                         ),
                       ),
                     ),
@@ -311,9 +298,6 @@ class SccoreView extends StatelessWidget {
                 ],
               ),
             ),
-            // Expanded(
-            //   child: ,
-            // ),
           ],
         ),
       ),
@@ -337,13 +321,34 @@ class SccoreView extends StatelessWidget {
         ),
       ),
       children: [
-        Text(sequence),
-        Text(team),
-        Text(game),
-        Text(win),
-        Text(draw),
-        Text(lose),
-        Text(points),
+        CustomText(
+          text: sequence,
+          styleType: TextStyleType.BODY,
+        ),
+        CustomText(
+          text: team,
+          styleType: TextStyleType.BODY,
+        ),
+        CustomText(
+          text: game,
+          styleType: TextStyleType.BODY,
+        ),
+        CustomText(
+          text: win,
+          styleType: TextStyleType.BODY,
+        ),
+        CustomText(
+          text: draw,
+          styleType: TextStyleType.BODY,
+        ),
+        CustomText(
+          text: lose,
+          styleType: TextStyleType.BODY,
+        ),
+        CustomText(
+          text: points,
+          styleType: TextStyleType.BODY,
+        ),
       ],
     );
   }

@@ -13,14 +13,18 @@ class CustomUpcomingMatches extends StatelessWidget {
     return Container(
       margin: EdgeInsetsDirectional.all(5),
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(25),
-          color: AppColors.whiteColor,
-          boxShadow: [
-            BoxShadow(
-                blurRadius: 6, color: AppColors.offGreyColor, spreadRadius: 1)
-          ]),
+        borderRadius: BorderRadius.circular(25),
+        color: AppColors.whiteColor,
+        boxShadow: [
+          BoxShadow(
+            blurRadius: 6,
+            color: AppColors.offGreyColor,
+            spreadRadius: 1,
+          ),
+        ],
+      ),
       width: screenWidth(1.1),
-      height: screenWidth(3.5),
+      height: screenWidth(3.4),
       child: Padding(
         padding: EdgeInsetsDirectional.only(top: screenWidth(30)),
         child: Row(

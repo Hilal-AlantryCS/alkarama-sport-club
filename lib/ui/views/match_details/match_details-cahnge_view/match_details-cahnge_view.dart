@@ -44,8 +44,8 @@ class _MatchDetailsChangeViewState extends State<MatchDetailsChangeView> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Container(
-                  width: screenWidth(2.4),
-                  height: screenWidth(1.6),
+                  // width: screenWidth(2.4),
+                  // height: screenWidth(1.6),
                   child: StaffDetails(
                     backgroundColor: AppColors.blueColor,
                     isPlayer: true,
@@ -65,8 +65,8 @@ class _MatchDetailsChangeViewState extends State<MatchDetailsChangeView> {
                   height: screenWidth(15),
                 ),
                 Container(
-                  width: screenWidth(2.4),
-                  height: screenWidth(1.6),
+                  // width: screenWidth(2.4),
+                  // height: screenWidth(1.6),
                   child: StaffDetails(
                     backgroundColor: AppColors.blueColor,
                     isPlayer: true,
