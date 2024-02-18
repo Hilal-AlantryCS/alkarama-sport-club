@@ -11,8 +11,8 @@ class CustomShield extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: screenWidth(15),
-      height: screenWidth(15),
+      width: screenWidth(13),
+      height: screenWidth(13),
       child: Stack(
         children: [
           Image.asset(
