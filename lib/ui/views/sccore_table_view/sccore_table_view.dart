@@ -1,3 +1,5 @@
+import 'package:alkarama_sport_club/core/enums/text_style_type.dart';
+import 'package:alkarama_sport_club/ui/shared/custom%20_widgets/custom_text.dart';
 import 'package:alkarama_sport_club/ui/shared/utlis.dart';
 import 'package:flutter/material.dart';
 
@@ -47,18 +49,22 @@ class SccoreTableView extends StatelessWidget {
               children: [
                 TableRow(
                   children: [
-                    Text("ترتيب"),
+                    CustomText(
+                      text: "ترتيب",
+                      styleType: TextStyleType.SMALL,
+                    ),
                     Container(
                       width: screenWidth(10),
-                      child: Text(
-                        "الفريق",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          // fontSize: screenWidth(30),
-                        ),
+                      child: CustomText(
+                        text: "الفريق",
+                        styleType: TextStyleType.SMALL,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Text("لعب"),
+                    CustomText(
+                      text: "لعب",
+                      styleType: TextStyleType.SMALL,
+                    ),
                     Container(
                       decoration: BoxDecoration(
                           border: Border(
@@ -67,7 +73,10 @@ class SccoreTableView extends StatelessWidget {
                           width: 3,
                         ),
                       )),
-                      child: Text("فاز"),
+                      child: CustomText(
+                        text: "فاز",
+                        styleType: TextStyleType.SMALL,
+                      ),
                     ),
                     Container(
                       decoration: BoxDecoration(
@@ -77,7 +86,10 @@ class SccoreTableView extends StatelessWidget {
                           width: 3,
                         ),
                       )),
-                      child: Text("تعادل"),
+                      child: CustomText(
+                        text: "تعادل",
+                        styleType: TextStyleType.SMALL,
+                      ),
                     ),
                     Container(
                       decoration: BoxDecoration(
@@ -87,9 +99,15 @@ class SccoreTableView extends StatelessWidget {
                           width: 3,
                         ),
                       )),
-                      child: Text("خسر"),
+                      child: CustomText(
+                        text: "خسر",
+                        styleType: TextStyleType.SMALL,
+                      ),
                     ),
-                    Text("نقاط"),
+                    CustomText(
+                      text: "نقاط",
+                      styleType: TextStyleType.SMALL,
+                    ),
                   ],
                 ),
                 tableRow(
@@ -128,13 +146,34 @@ TableRow tableRow({
       ),
     ),
     children: [
-      Text(sequence),
-      Text(team),
-      Text(game),
-      Text(win),
-      Text(draw),
-      Text(lose),
-      Text(points),
+      CustomText(
+        text: sequence,
+        styleType: TextStyleType.BODY,
+      ),
+      CustomText(
+        text: team,
+        styleType: TextStyleType.BODY,
+      ),
+      CustomText(
+        text: game,
+        styleType: TextStyleType.BODY,
+      ),
+      CustomText(
+        text: win,
+        styleType: TextStyleType.BODY,
+      ),
+      CustomText(
+        text: draw,
+        styleType: TextStyleType.BODY,
+      ),
+      CustomText(
+        text: lose,
+        styleType: TextStyleType.BODY,
+      ),
+      CustomText(
+        text: points,
+        styleType: TextStyleType.BODY,
+      ),
     ],
   );
 }

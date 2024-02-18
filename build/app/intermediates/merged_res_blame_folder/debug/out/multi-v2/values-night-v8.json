@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "F:\\Projects\\alkarama-sport-club\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
                     "source": "F:\\Projects\\alkarama-sport-club\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+=======
+            "outputFile": "C:\\Darbni\\alkarama-sport-club\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "map": [
+                {
+                    "source": "C:\\Darbni\\alkarama-sport-club\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+>>>>>>> 69408d5b663da92ebc4192d64dd8e26154c71051
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 #Thu Feb 15 17:23:18 EET 2024
 base.0=F\:\\Projects\\alkarama-sport-club\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
+=======
+#Sun Feb 18 17:45:08 GMT+02:00 2024
+base.0=C\:\\Darbni\\alkarama-sport-club\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
+>>>>>>> 69408d5b663da92ebc4192d64dd8e26154c71051

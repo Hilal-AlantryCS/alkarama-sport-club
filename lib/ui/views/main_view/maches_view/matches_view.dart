@@ -28,7 +28,7 @@ class _MatchesViewState extends State<MatchesView> {
               end: screenWidth(20), start: screenWidth(20)),
           children: [
             SizedBox(
-              height: screenWidth(13),
+              height: screenWidth(14),
             ),
             CustomUpcomingMatches(isLive: true),
             Container(

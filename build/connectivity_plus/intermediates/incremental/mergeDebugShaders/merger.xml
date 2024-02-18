@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Anas\AppData\Local\Pub\Cache\hosted\pub.dev\connectivity_plus-3.0.6\android\src\main\shaders"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Anas\AppData\Local\Pub\Cache\hosted\pub.dev\connectivity_plus-3.0.6\android\src\debug\shaders"/></dataSet></merger>
+=======
+<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\ASUS\AppData\Local\Pub\Cache\hosted\pub.dev\connectivity_plus-3.0.6\android\src\main\shaders"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\ASUS\AppData\Local\Pub\Cache\hosted\pub.dev\connectivity_plus-3.0.6\android\src\debug\shaders"/></dataSet></merger>
+>>>>>>> 69408d5b663da92ebc4192d64dd8e26154c71051
