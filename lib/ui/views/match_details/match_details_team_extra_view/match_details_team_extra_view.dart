@@ -44,17 +44,20 @@ class _MatchDtailsTeamViewState extends State<MatchDtailsTeamView> {
                 itemCount: 4,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
-                  return StaffDetails(
-                    backgroundColor: AppColors.blueColor,
-                    isPlayer: true,
-                    isGk: false,
-                    imageUrl: ' imageUrl',
-                    name: 'خالد المشرف',
-                    role: 'المعد البدني',
-                    playerNum: '19',
-                    playerRole: 'GK',
-                    playerTall: '188',
-                    years: '20',
+                  return Container(
+                    width: screenWidth(2.4),
+                    child: StaffDetails(
+                      backgroundColor: AppColors.blueColor,
+                      isPlayer: true,
+                      isGk: false,
+                      imageUrl: ' imageUrl',
+                      name: 'خالد المشرف',
+                      role: 'المعد البدني',
+                      playerNum: '19',
+                      playerRole: 'GK',
+                      playerTall: '188',
+                      years: '20',
+                    ),
                   );
                 },
               ),
@@ -66,17 +69,20 @@ class _MatchDtailsTeamViewState extends State<MatchDtailsTeamView> {
                 itemCount: 4,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
-                  return StaffDetails(
-                    backgroundColor: AppColors.blueColor,
-                    isPlayer: true,
-                    isGk: false,
-                    imageUrl: ' imageUrl',
-                    name: 'خالد المشرف',
-                    role: 'المعد البدني',
-                    playerNum: '19',
-                    playerRole: 'GK',
-                    playerTall: '188',
-                    years: '20',
+                  return Container(
+                    width: screenWidth(2.4),
+                    child: StaffDetails(
+                      backgroundColor: AppColors.blueColor,
+                      isPlayer: true,
+                      isGk: false,
+                      imageUrl: ' imageUrl',
+                      name: 'خالد المشرف',
+                      role: 'المعد البدني',
+                      playerNum: '19',
+                      playerRole: 'GK',
+                      playerTall: '188',
+                      years: '20',
+                    ),
                   );
                 },
               ),
