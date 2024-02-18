@@ -1,9 +1,12 @@
 import 'package:alkarama_sport_club/core/enums/text_style_type.dart';
+import 'package:alkarama_sport_club/ui/shared/colors.dart';
 import 'package:alkarama_sport_club/ui/shared/custom%20_widgets/custom_text.dart';
+import 'package:alkarama_sport_club/ui/shared/shared_widgets/custom_sccore_match.dart';
 import 'package:alkarama_sport_club/ui/shared/shared_widgets/custom_tob_container.dart';
 import 'package:alkarama_sport_club/ui/shared/utlis.dart';
 import 'package:alkarama_sport_club/ui/views/sccore_table_view/sccore_table_view.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -42,19 +45,15 @@ class SccoreView extends StatelessWidget {
                 children: [
                   Column(
                     children: [
-                      Text(
-                        "السبت",
-                        style: TextStyle(
-                          fontSize: screenWidth(24),
-                          color: Colors.black,
-                        ),
+                      CustomText(
+                        text: "السبت",
+                        styleType: TextStyleType.SMALL,
+                        textColor: Colors.black,
                       ),
-                      Text(
-                        "17 نوفمبر",
-                        style: TextStyle(
-                          fontSize: screenWidth(24),
-                          color: Colors.black,
-                        ),
+                      CustomText(
+                        text: "3 نوفمبر",
+                        styleType: TextStyleType.SMALL,
+                        textColor: Colors.black,
                       ),
                     ],
                   ),
@@ -79,38 +78,30 @@ class SccoreView extends StatelessWidget {
                     alignment: Alignment.topCenter,
                     child: Column(
                       children: [
-                        Text(
-                          "السبت",
-                          style: TextStyle(
-                            fontSize: screenWidth(24),
-                            color: Colors.black,
-                          ),
+                        CustomText(
+                          text: "السبت",
+                          styleType: TextStyleType.SMALL,
+                          textColor: Colors.black,
                         ),
-                        Text(
-                          "10 نوفمبر",
-                          style: TextStyle(
-                            fontSize: screenWidth(24),
-                            color: Colors.black,
-                          ),
+                        CustomText(
+                          text: "3 نوفمبر",
+                          styleType: TextStyleType.SMALL,
+                          textColor: Colors.black,
                         ),
                       ],
                     ),
                   ),
                   Column(
                     children: [
-                      Text(
-                        "السبت",
-                        style: TextStyle(
-                          fontSize: screenWidth(24),
-                          color: Colors.black,
-                        ),
+                      CustomText(
+                        text: "السبت",
+                        styleType: TextStyleType.SMALL,
+                        textColor: Colors.black,
                       ),
-                      Text(
-                        "3 نوفمبر",
-                        style: TextStyle(
-                          fontSize: screenWidth(24),
-                          color: Colors.black,
-                        ),
+                      CustomText(
+                        text: "3 نوفمبر",
+                        styleType: TextStyleType.SMALL,
+                        textColor: Colors.black,
                       ),
                     ],
                   ),
@@ -124,94 +115,43 @@ class SccoreView extends StatelessWidget {
             ),
             CarouselSlider(
               options: CarouselOptions(
-                height: screenWidth(1.9),
+                enlargeCenterPage: true,
+                enableInfiniteScroll: true,
+                viewportFraction: 0.92,
+                autoPlay: true,
+                onPageChanged: (index, reason) {},
               ),
               items: [
-                Container(
-                  margin: EdgeInsetsDirectional.all(screenWidth(20)),
-                  width: screenWidth(1),
-                  child: Stack(
-                    children: [
-                      Image.asset(
-                        "assets/images/pngs/ic_bg.png",
-                      ),
-                      Align(
-                        alignment: Alignment.center,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Column(
-                              children: [
-                                Image.asset(
-                                  "assets/images/pngs/ic_gabla.png",
-                                  width: screenWidth(9),
-                                  height: screenWidth(9),
-                                ),
-                                CustomText(
-                                  text: "صاحب ثالث هدف",
-                                  styleType: TextStyleType.SMALL,
-                                ),
-                                CustomText(
-                                  text: "جبلة",
-                                  styleType: TextStyleType.SMALL,
-                                ),
-                              ],
-                            ),
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                CustomText(
-                                  text: "الجمعة,2023/05/26",
-                                  styleType: TextStyleType.SMALL,
-                                ),
-                                CustomText(
-                                  text: "عصراً 12:12",
-                                  styleType: TextStyleType.SMALL,
-                                ),
-                                CustomText(
-                                  text: "ملعب خالد بن الوليد",
-                                  styleType: TextStyleType.SMALL,
-                                ),
-                                CustomText(
-                                  text: "0:1",
-                                  styleType: TextStyleType.SMALL,
-                                ),
-                                CustomText(
-                                  text: "الجولة",
-                                  styleType: TextStyleType.SMALL,
-                                ),
-                                CustomText(
-                                  text: "23",
-                                  styleType: TextStyleType.SMALL,
-                                ),
-                              ],
-                            ),
-                            Column(
-                              children: [
-                                Image.asset(
-                                  "assets/images/pngs/ic_karama.png",
-                                  width: screenWidth(9),
-                                  height: screenWidth(9),
-                                ),
-                                CustomText(
-                                  text: "الكرامة",
-                                  styleType: TextStyleType.SMALL,
-                                ),
-                                CustomText(
-                                  text: "صاحب أول هدف",
-                                  styleType: TextStyleType.SMALL,
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
+                CustomSccoreMatch(
+                  date: "الجمعة,2023/05/26",
+                  round: "23",
+                  stadium: "ملعب خالد بن الوليد",
+                  time: "عصراً 12:12",
+                  leftTeam: "جبلة",
+                  leftTeamGoalDescription: "صاحب ثالث هدف",
+                  leftTeamImg: "assets/images/pngs/ic_gabla.png",
+                  leftTeamGoal: '0',
+                  rightTeam: "الكرامة",
+                  rightTeamGoal: '1',
+                  rightTeamGoalDescription: "صاحب أول هدف",
+                  rightTeamImg: "assets/images/pngs/ic_karama.png",
                 ),
               ],
             ),
+            Obx(() {
+              return DotsIndicator(
+                dotsCount: 3,
+                position: 2,
+                decorator: DotsDecorator(
+                  // size: Size.square(9),
+                  activeSize: Size(30, 9.0),
+                  color: AppColors.blueColor,
+                  activeShape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5)),
+                  activeColor: AppColors.orangeColor,
+                ),
+              );
+            }),
             Container(
               height: screenWidth(1.5),
               margin: EdgeInsetsDirectional.symmetric(
